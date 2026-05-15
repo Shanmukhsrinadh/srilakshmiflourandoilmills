@@ -122,22 +122,24 @@ export default function Contact() {
                 <a href={getWhatsAppLink("Hi Sri Lakshmi Oil Mills, I'd like to enquire about your products.")} target="_blank" rel="noreferrer" className="btn btn-whatsapp">💬 WhatsApp</a>
               </div>
             </div>
-            <div className="contact-map-placeholder">
-              <div className="placeholder-img contact-map-ph">
-                <span className="ph-icon">🗺️</span>
-                <span>Google Maps</span>
-                <small>Embed Google Maps here</small>
-                <div className="map-hint">
-                  To embed: Replace this with a Google Maps iframe for your store location.
-                </div>
-              </div>
+            <div className="contact-map-embed">
+              <iframe
+                title="Sri Lakshmi Flour & Oil Mill Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.0237330343761!2d83.3124423!3d17.7356909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433652bd0f3d%3A0x3c2f95cb5ff8a4a2!2sSri%20Lakshmi%20Flour%20%26%20Oil%20Mill!5e0!3m2!1sen!2sin!4v1715000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: 16 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Enquiry CTA */}
-      <section className="section-pad" style={{ background: 'linear-gradient(135deg, #0f3d22 0%, #1F6B3A 100%)', textAlign: 'center' }}>
+      <section className="section-pad" style={{ background: 'linear-gradient(135deg, var(--green-deep) 0%, var(--green-leaf) 100%)', textAlign: 'center' }}>
         <div className="container">
           <h2 style={{ color: '#fff', fontSize: '1.8rem', marginBottom: 12 }}>Have a Product Enquiry?</h2>
           <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: 28, fontSize: '1rem' }}>

@@ -1,0 +1,53 @@
+.floating-wa {
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 999px;
+  padding: 12px 20px 12px 14px;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.40), 0 2px 8px rgba(0,0,0,0.14);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: wa-pop 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both;
+  animation-delay: 1.2s;
+}
+
+.floating-wa:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 10px 32px rgba(37,211,102,0.50), 0 4px 12px rgba(0,0,0,0.18);
+}
+
+.floating-wa-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.floating-wa-label {
+  white-space: nowrap;
+}
+
+@keyframes wa-pop {
+  from { opacity: 0; transform: scale(0.6) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .floating-wa {
+    bottom: 18px;
+    right: 14px;
+    padding: 11px 16px 11px 12px;
+    font-size: 0.84rem;
+  }
+  .floating-wa-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

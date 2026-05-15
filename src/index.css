@@ -5,26 +5,33 @@
 }
 
 :root {
-  --green-deep: #1F6B3A;
-  --green-leaf: #2E8B57;
-  --green-light-bg: #F1F8F3;
-  --green-border: #C5E0CE;
+  /* Leaf green palette — vibrant, natural */
+  --green-deep: #2E7D32;
+  --green-leaf: #43A047;
+  --green-mid:  #388E3C;
+  --green-light-bg: #E8F5E9;
+  --green-border: #A5D6A7;
+
   --cream: #FFF8E7;
   --cream-dark: #F0E4C8;
   --gold: #D9A441;
   --gold-light: #F5C842;
+
   --text-dark: #1E1E1E;
   --text-muted: #666666;
   --text-light: #999999;
   --white: #ffffff;
+
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
   --shadow-md: 0 4px 18px rgba(0,0,0,0.10);
   --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+
   --radius-sm: 10px;
   --radius-md: 14px;
   --radius-lg: 20px;
   --radius-xl: 28px;
   --radius-pill: 999px;
+
   --font-base: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   --header-height: 72px;
   --transition: 0.2s ease;
@@ -93,7 +100,7 @@ input, select, textarea { font-family: var(--font-base); outline: none; }
 .green-bg { background: var(--green-light-bg); }
 .cream-bg { background: var(--cream); }
 
-/* ── Buttons (all pill-shaped) ── */
+/* ── Buttons — all pill-shaped ── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -173,7 +180,7 @@ input, select, textarea { font-family: var(--font-base); outline: none; }
 
 /* ── Placeholder images ── */
 .placeholder-img {
-  background: linear-gradient(145deg, #e8f5e9 0%, #f1f8f3 100%);
+  background: linear-gradient(145deg, #E8F5E9 0%, #F1F8F3 100%);
   display: flex;
   align-items: center;
   justify-content: center;

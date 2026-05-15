@@ -2,18 +2,13 @@
   flex: 1;
 }
 
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
+/* ── Section header row ── */
 .home-section-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
@@ -23,60 +18,62 @@
   margin-bottom: 4px;
 }
 
-.catalogue-filters {
+/* ── Featured horizontal scroll ── */
+.featured-scroll-track {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
-  justify-content: center;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 8px 24px 16px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-.cat-filter-btn {
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: 1.5px solid var(--green-border);
-  background: var(--white);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all 0.18s;
+.featured-scroll-track::-webkit-scrollbar {
+  display: none;
 }
 
-.cat-filter-btn:hover {
-  border-color: var(--green-leaf);
-  color: var(--green-deep);
-  background: var(--green-light-bg);
+.featured-scroll-card {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+  min-width: 240px;
 }
 
-.cat-filter-btn.active {
-  background: var(--green-deep);
-  color: var(--white);
-  border-color: var(--green-deep);
-}
-
-.catalogue-view-more {
+.featured-scroll-hint {
   text-align: center;
-  margin-top: 32px;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 6px;
+  letter-spacing: 0.5px;
 }
 
-@media (max-width: 1000px) {
-  .categories-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (min-width: 1200px) {
+  .featured-scroll-track {
+    padding-left: calc((100vw - 1200px) / 2 + 24px);
+    padding-right: calc((100vw - 1200px) / 2 + 24px);
   }
 }
 
-@media (max-width: 700px) {
-  .categories-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .featured-scroll-card {
+    flex: 0 0 210px;
+    min-width: 210px;
   }
   .home-section-header {
     flex-direction: column;
   }
+  .home-section-header .btn {
+    align-self: flex-start;
+  }
 }
 
-@media (max-width: 440px) {
-  .categories-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .featured-scroll-card {
+    flex: 0 0 185px;
+    min-width: 185px;
+  }
+  .featured-scroll-track {
+    padding: 8px 16px 16px;
+    gap: 12px;
   }
 }

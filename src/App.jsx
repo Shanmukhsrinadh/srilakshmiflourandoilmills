@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Header from './components/Header'
 import CategoryBar from './components/CategoryBar'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
@@ -33,6 +34,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </BrowserRouter>
   )
 }

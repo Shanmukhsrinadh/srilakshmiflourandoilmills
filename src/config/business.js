@@ -1,10 +1,13 @@
 export const BUSINESS = {
-  name: "Sri Lakshmi Oil Mills",
-  phone: "REPLACE_PHONE_NUMBER",
-  whatsapp: "REPLACE_WHATSAPP_NUMBER",
-  address: "REPLACE_BUSINESS_ADDRESS",
+  name: "Sri Lakshmi Flour & Oil Mill",
+  shortName: "Sri Lakshmi Oil Mills",
+  phone: "9848183737",
+  whatsapp: "919848183737",
+  address: "Sri Lakshmi Flour & Oil Mill, Andhra Pradesh",
+  mapsUrl: "https://maps.app.goo.gl/N7U2enGKL8DL2nQL8",
+  mapsEmbed: "https://www.google.com/maps?q=17.7357809,83.3127459&z=17&output=embed",
   timings: "Mon - Sat: 8:00 AM - 8:00 PM, Sun: 9:00 AM - 1:00 PM",
-  email: "REPLACE_EMAIL",
+  email: "",
   tagline: "Pure Traditional Oils, Trusted for Generations",
   experience: "40+",
 };

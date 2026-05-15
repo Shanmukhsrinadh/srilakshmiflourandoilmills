@@ -58,16 +58,20 @@
   gap: 2px;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-anchor {
   padding: 7px 14px;
   border-radius: var(--radius-pill);
   color: var(--text-dark);
   font-weight: 600;
   font-size: 0.88rem;
   transition: all 0.18s;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-anchor:hover {
   color: var(--green-deep);
   background: var(--green-light-bg);
 }

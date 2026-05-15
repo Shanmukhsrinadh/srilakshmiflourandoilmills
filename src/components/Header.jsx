@@ -1,7 +1,33 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { BUSINESS, getWhatsAppLink, getCallLink } from '../config/business'
 import './Header.css'
+
+function AnchorNavLink({ to, hash, children, onClick }) {
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    if (onClick) onClick()
+    if (location.pathname === '/') {
+      const el = document.getElementById(hash)
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      navigate('/')
+      setTimeout(() => {
+        const el = document.getElementById(hash)
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 120)
+    }
+  }
+
+  return (
+    <a href={`/#${hash}`} className="nav-anchor" onClick={handleClick}>
+      {children}
+    </a>
+  )
+}
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -39,8 +65,8 @@ export default function Header() {
           <nav className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
             <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
             <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
-            <NavLink to="/about" onClick={closeMenu}>About</NavLink>
-            <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+            <AnchorNavLink hash="about" onClick={closeMenu}>About</AnchorNavLink>
+            <AnchorNavLink hash="contact" onClick={closeMenu}>Contact</AnchorNavLink>
 
             <div className="nav-actions-mobile">
               <a href={getCallLink()} className="btn btn-call btn-sm">📞 Call Us</a>

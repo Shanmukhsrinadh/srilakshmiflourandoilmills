@@ -20,8 +20,36 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+
+import Header from './components/Header'
+import CategoryBar from './components/CategoryBar'
+import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
+
+import Home from './pages/Home'
+import Products from './pages/Products'
+import ProductDetails from './pages/ProductDetails'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <ScrollToTop />
+
       <Header />
       <CategoryBar />
+
       <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -31,10 +59,13 @@ function App() {
           <Route path="/contact" element={<Navigate to="/#contact" replace />} />
         </Routes>
       </main>
+
       <Footer />
       <FloatingWhatsApp />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
+
+export default App
 
 export default App

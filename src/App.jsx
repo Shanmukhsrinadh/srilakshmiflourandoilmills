@@ -1,25 +1,3 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
-import Header from './components/Header'
-import CategoryBar from './components/CategoryBar'
-import Footer from './components/Footer'
-import FloatingWhatsApp from './components/FloatingWhatsApp'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import ProductDetails from './pages/ProductDetails'
-
-function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
-  return null
-}
-
-function App() {
-  return (
-    <BrowserRouter>
-      <ScrollToTop />
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
@@ -47,25 +25,47 @@ function App() {
     <HashRouter>
       <ScrollToTop />
 
-      <Header />
-      <CategoryBar />
+      <div
+        style={{
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <Header />
+        <CategoryBar />
 
-      <main style={{ flex: 1 }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:slug" element={<ProductDetails />} />
-          <Route path="/about" element={<Navigate to="/#about" replace />} />
-          <Route path="/contact" element={<Navigate to="/#contact" replace />} />
-        </Routes>
-      </main>
+        <main style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-      <Footer />
-      <FloatingWhatsApp />
+            <Route path="/products" element={<Products />} />
+
+            <Route
+              path="/products/:slug"
+              element={<ProductDetails />}
+            />
+
+            <Route
+              path="/about"
+              element={<Navigate to="/#about" replace />}
+            />
+
+            <Route
+              path="/contact"
+              element={<Navigate to="/#contact" replace />}
+            />
+
+            {/* Fallback Route */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
     </HashRouter>
   )
 }
-
-export default App
 
 export default App

@@ -8,7 +8,7 @@
 }
 
 .site-header.scrolled {
-  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
 }
 
 .header-inner {
@@ -38,7 +38,7 @@
 }
 
 .logo-name {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: var(--green-deep);
   line-height: 1.2;
@@ -46,7 +46,7 @@
 }
 
 .logo-tagline {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   color: var(--text-muted);
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -55,17 +55,16 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 .nav-links a {
-  padding: 8px 14px;
-  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
   color: var(--text-dark);
   font-weight: 600;
-  font-size: 0.92rem;
-  transition: all 0.2s;
-  position: relative;
+  font-size: 0.88rem;
+  transition: all 0.18s;
 }
 
 .nav-links a:hover {
@@ -85,19 +84,19 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .search-toggle {
   background: none;
   border: none;
   padding: 8px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   color: var(--text-dark);
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: all 0.2s;
+  transition: all 0.18s;
 }
 
 .search-toggle:hover {
@@ -114,7 +113,7 @@
   border: none;
   padding: 8px;
   cursor: pointer;
-  border-radius: var(--radius-sm);
+  border-radius: 10px;
   width: 40px;
   height: 40px;
 }
@@ -123,20 +122,14 @@
   display: block;
   height: 2.5px;
   background: var(--green-deep);
-  border-radius: 2px;
+  border-radius: var(--radius-pill);
   transition: all 0.25s ease;
   transform-origin: center;
 }
 
-.hamburger.open span:nth-child(1) {
-  transform: translateY(7.5px) rotate(45deg);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-7.5px) rotate(-45deg);
-}
+.hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
 .search-bar {
   border-top: 1px solid var(--green-border);
@@ -152,11 +145,12 @@
 
 .search-form input {
   flex: 1;
-  padding: 10px 16px;
+  padding: 10px 18px;
   border: 1.5px solid var(--green-border);
-  border-radius: var(--radius-sm);
-  font-size: 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
   background: var(--white);
+  transition: border-color 0.18s;
 }
 
 .search-form input:focus {
@@ -166,11 +160,12 @@
 .search-close {
   background: none;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-muted);
   cursor: pointer;
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  transition: background 0.18s;
 }
 
 .search-close:hover {
@@ -186,15 +181,9 @@
 }
 
 @media (max-width: 900px) {
-  .header-btn {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-  .menu-overlay {
-    display: block;
-  }
+  .header-btn { display: none; }
+  .hamburger { display: flex; }
+  .menu-overlay { display: block; }
 
   .nav-links {
     position: fixed;
@@ -205,22 +194,22 @@
     background: var(--white);
     flex-direction: column;
     align-items: flex-start;
-    padding: 90px 24px 32px;
-    gap: 6px;
+    padding: 90px 20px 32px;
+    gap: 4px;
     transition: right 0.28s ease;
     z-index: 1001;
     box-shadow: -4px 0 24px rgba(0,0,0,0.12);
     overflow-y: auto;
+    border-radius: 0;
   }
 
-  .nav-links.nav-open {
-    right: 0;
-  }
+  .nav-links.nav-open { right: 0; }
 
   .nav-links a {
     width: 100%;
     font-size: 1rem;
     padding: 12px 16px;
+    border-radius: 12px;
   }
 
   .nav-actions-mobile {
@@ -236,15 +225,10 @@
   .nav-actions-mobile .btn {
     width: 100%;
     justify-content: center;
-    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-tagline {
-    display: none;
-  }
-  .logo-name {
-    font-size: 0.95rem;
-  }
+  .logo-tagline { display: none; }
+  .logo-name { font-size: 0.92rem; }
 }

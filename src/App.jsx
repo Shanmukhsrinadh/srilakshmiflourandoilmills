@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Header from './components/Header'
+import CategoryBar from './components/CategoryBar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Products from './pages/Products'
@@ -21,6 +22,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Header />
+      <CategoryBar />
       <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />

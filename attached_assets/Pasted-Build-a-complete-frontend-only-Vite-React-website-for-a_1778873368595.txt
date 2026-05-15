@@ -1,0 +1,422 @@
+Build a complete frontend-only Vite + React website for a traditional oil mill business named “Sri Lakshmi Oil Mills”.
+
+IMPORTANT:
+This is NOT a luxury/premium modern startup website. The client is an old-generation oil mill owner with 40 years of experience. The main goal is trust, clarity, product showcase, and easy enquiries. The design should feel clean, traditional, reliable, and family-business friendly.
+
+Reference inspiration:
+Use the layout style and product catalogue feel of this website:
+https://www.godavarivantillu.com/collections/millet-foods-sweets-and-snacks
+
+Do not copy the design exactly. Take inspiration from:
+- simple e-commerce/product listing structure
+- category navigation
+- product cards
+- clean product grid
+- trust-focused content
+- simple header/footer
+- mobile-friendly product browsing
+
+Tech stack:
+- Vite + React
+- React Router
+- Plain CSS / CSS modules / Tailwind if already installed
+- Frontend only
+- No backend
+- No database
+- No payment gateway
+- No external image URLs
+- All images must be placed inside src/assets/images/
+- Use local placeholder images from src/assets/images/ and reference them properly in React
+- Product data must come from a JSON file
+
+Website purpose:
+Sri Lakshmi Oil Mills sells traditional oils and related food products. The website should help customers:
+- understand the trust and experience behind the business
+- browse products
+- filter by category
+- view product details
+- enquire through WhatsApp or call
+- see the owner’s 40 years of experience
+- see a newspaper achievement/article section
+- contact or visit the store
+
+Brand:
+Business name: Sri Lakshmi Oil Mills
+Primary color preference from client: Green
+Use green as the main trust/lucky color.
+Suggested palette:
+- Deep green: #1F6B3A
+- Leaf green: #2E8B57
+- Light green background: #F1F8F3
+- Warm cream: #FFF8E7
+- Dark text: #1E1E1E
+- Muted text: #666666
+- Accent gold/yellow: #D9A441 for trust badges/highlights
+
+Tone:
+Traditional, trustworthy, simple, warm, local-business friendly.
+
+Pages needed:
+1. Home page
+2. Products page
+3. Product details page
+4. About page
+5. Contact page
+
+Header:
+- Logo area on left: Sri Lakshmi Oil Mills
+- Navigation: Home, Products, About, Contact
+- Search icon/input
+- Call button
+- WhatsApp button
+- Mobile hamburger menu
+- Sticky header on scroll if possible
+
+Home page sections:
+
+1. Hero section
+Create a warm hero section with:
+- Headline: “Pure Traditional Oils, Trusted for Generations”
+- Subheadline: “Sri Lakshmi Oil Mills brings you quality oils and food products backed by 40 years of hands-on experience.”
+- CTA buttons:
+  - View Products
+  - Enquire on WhatsApp
+- Use a local hero image placeholder from src/assets/images/oil-hero.jpg
+- Include trust badges:
+  - 40 Years Experience
+  - Quality Checked
+  - Traditional Oil Mill
+  - Fresh Products
+
+2. Product categories section
+Show category cards:
+- Groundnut Oil
+- Sesame Oil
+- Coconut Oil
+- Mustard Oil
+- Castor Oil
+- Millets
+- Snacks
+- Sweets
+- Pickles
+- Powders
+- Other Products
+
+Each category card should show image, name, and product count from JSON.
+
+3. Featured products section
+Show 8 to 12 featured products from JSON.
+Each product card should include:
+- product image
+- product name
+- category
+- available sizes
+- price / starting price
+- short description
+- “View Details”
+- “WhatsApp Enquiry”
+
+4. Owner trust section
+Dedicated section for the owner:
+- Big photo placeholder: src/assets/images/owner.jpg
+- Title: “40 Years of Experience”
+- Heading: “Quality You Can Trust by Just One Look”
+- Text:
+  “With over 40 years of experience in the oil mill business, the owner of Sri Lakshmi Oil Mills has built deep knowledge in identifying product quality, freshness, and purity. His experience helps customers receive products they can trust.”
+- Add badge: “40+ Years Experience”
+- Add small points:
+  - Expert in quality judgement
+  - Trusted by local customers
+  - Traditional oil mill knowledge
+  - Customer-first service
+
+5. Newspaper achievement section
+Create a dedicated achievement/news section:
+- Heading: “Featured in Newspaper”
+- Subheading: “A proud recognition of our work and trust in the local community.”
+- Display newspaper article image placeholder from src/assets/images/newspaper-article.jpg
+- Add text beside it:
+  “Sri Lakshmi Oil Mills was featured in a newspaper article for its contribution, quality, and trusted service in the oil mill business.”
+- Add button: “View Achievement”
+- On click, open a modal/lightbox showing the newspaper article image larger.
+
+6. Why customers trust us section
+Keep it simple and traditional:
+- 40 years experience
+- Fresh quality products
+- Traditional process
+- Honest pricing
+- Local customer trust
+- Easy WhatsApp enquiry
+
+7. Product catalogue preview
+Show a larger product grid preview with filters:
+- All
+- Oils
+- Millets
+- Snacks
+- Sweets
+- Pickles
+- Powders
+- Others
+
+8. CTA section
+Heading: “Need pure oil or food products for your home?”
+Buttons:
+- Call Now
+- WhatsApp Enquiry
+- Visit Store
+
+Products page:
+- Product grid using JSON data
+- Search by product name
+- Filter by category
+- Filter by availability
+- Sort by name / price low to high / price high to low
+- Product count display
+- Mobile-friendly filters
+- Product cards with WhatsApp enquiry button
+
+Product details page:
+Each product should have a dedicated details page using route like /products/:slug
+
+Show:
+- large product image
+- product name
+- category
+- price
+- available sizes
+- stock status
+- short description
+- detailed description
+- quality highlights
+- usage suggestions
+- WhatsApp enquiry button
+- Call button
+- Related products from same category
+
+WhatsApp enquiry:
+For every product, the WhatsApp message should include product details clearly.
+
+Example message:
+“Hi Sri Lakshmi Oil Mills, I’m interested in Groundnut Oil - 1 Litre. Please share price and availability.”
+
+Use a constant OWNER_WHATSAPP_NUMBER in a config file so I can update it later.
+Use wa.me link or api.whatsapp.com link.
+Also include call button with OWNER_PHONE_NUMBER constant.
+
+About page:
+Sections:
+- About Sri Lakshmi Oil Mills
+- 40 years of experience
+- Owner profile section
+- Traditional quality checking
+- Newspaper achievement
+- Customer trust points
+
+Contact page:
+Include:
+- business address placeholder
+- phone number
+- WhatsApp
+- timings
+- Google Maps embed placeholder area
+- enquiry CTA
+- simple contact info cards
+No backend contact form required.
+
+Footer:
+- Logo/name
+- Short description
+- Quick links
+- Product categories
+- Contact details
+- WhatsApp button
+- Copyright
+- “Designed and developed by [Your Brand Name]” placeholder
+
+JSON product data:
+Create src/data/products.json
+Use at least 30 dummy products now, but structure it in a way that can support 110+ products later.
+Use realistic categories and product fields.
+
+Product object structure:
+{
+  "id": "SLOM-001",
+  "name": "Groundnut Oil",
+  "slug": "groundnut-oil",
+  "category": "Oils",
+  "subCategory": "Groundnut Oil",
+  "image": "/src/assets/images/products/groundnut-oil.jpg",
+  "price": 220,
+  "priceLabel": "From ₹220",
+  "sizes": ["500ml", "1L", "5L"],
+  "availability": "Available",
+  "featured": true,
+  "shortDescription": "Fresh and pure groundnut oil suitable for daily cooking.",
+  "description": "Traditionally processed groundnut oil with rich aroma and natural taste.",
+  "highlights": ["Fresh stock", "Traditional quality", "Suitable for cooking"],
+  "usage": ["Daily cooking", "Frying", "Traditional recipes"]
+}
+
+Create dummy products for:
+Oils:
+- Groundnut Oil
+- Sesame Oil
+- Coconut Oil
+- Mustard Oil
+- Castor Oil
+- Sunflower Oil
+- Rice Bran Oil
+
+Millets:
+- Foxtail Millet
+- Little Millet
+- Kodo Millet
+- Barnyard Millet
+- Pearl Millet
+- Finger Millet
+
+Snacks:
+- Murukulu
+- Chekkalu
+- Mixture
+- Karam Boondi
+- Millet Snacks
+
+Sweets:
+- Bellam Laddu
+- Sesame Laddu
+- Groundnut Chikki
+- Dry Fruit Laddu
+
+Pickles:
+- Mango Pickle
+- Gongura Pickle
+- Tomato Pickle
+- Lemon Pickle
+
+Powders:
+- Idli Karam
+- Curry Leaf Powder
+- Groundnut Powder
+- Sesame Powder
+
+Others:
+- Jaggery
+- Honey
+- Ghee
+- Dry Fruits
+
+Image handling:
+Create folder:
+src/assets/images/
+src/assets/images/products/
+
+Use imports or a proper image mapping system. Do not use broken image paths.
+If exact images are not available, create placeholder cards that still look clean and mention where to replace images later.
+Do not use external URLs.
+
+Design requirements:
+- Mobile-first responsive
+- Large readable text for older customers
+- Clear buttons
+- Simple navigation
+- Product cards should not look too tiny
+- Use green highlights
+- Use cream/light backgrounds
+- Add subtle shadows and rounded corners
+- Avoid overly futuristic animations
+- Use gentle hover effects only
+- Make it fast and clean
+
+Important client psychology:
+The client is old-generation and values trust, experience, and respect.
+So the website should make him feel proud.
+Do not make it look like a flashy tech startup.
+Make it look like a respected local business with heritage.
+
+Components to create:
+- Header
+- Footer
+- Hero
+- CategoryCard
+- ProductCard
+- ProductGrid
+- ProductFilters
+- OwnerExperience
+- NewspaperFeature
+- TrustBadges
+- CTASection
+- ProductDetails
+- WhatsAppButton
+- CallButton
+
+Functional requirements:
+- Product search
+- Category filter
+- Sort products
+- Product details routing
+- Related products
+- WhatsApp enquiry with product name and size if available
+- Newspaper article modal
+- Responsive mobile menu
+- Scroll to top on route change
+- Clean file structure
+
+Suggested file structure:
+src/
+  assets/
+    images/
+      oil-hero.jpg
+      owner.jpg
+      newspaper-article.jpg
+      products/
+  components/
+    Header.jsx
+    Footer.jsx
+    Hero.jsx
+    CategoryCard.jsx
+    ProductCard.jsx
+    ProductGrid.jsx
+    ProductFilters.jsx
+    OwnerExperience.jsx
+    NewspaperFeature.jsx
+    TrustBadges.jsx
+    CTASection.jsx
+    WhatsAppButton.jsx
+    CallButton.jsx
+  pages/
+    Home.jsx
+    Products.jsx
+    ProductDetails.jsx
+    About.jsx
+    Contact.jsx
+  data/
+    products.json
+  config/
+    business.js
+  App.jsx
+  main.jsx
+  index.css
+
+business.js:
+export const BUSINESS = {
+  name: "Sri Lakshmi Oil Mills",
+  phone: "REPLACE_PHONE_NUMBER",
+  whatsapp: "REPLACE_WHATSAPP_NUMBER",
+  address: "REPLACE_BUSINESS_ADDRESS",
+  timings: "REPLACE_TIMINGS"
+};
+
+SEO basics:
+Add proper title text and meta description in index.html:
+Title: Sri Lakshmi Oil Mills | Pure Traditional Oils & Food Products
+Description: Sri Lakshmi Oil Mills offers traditional oils and food products backed by 40 years of experience and trusted quality.
+
+Final output:
+Generate the full working React project code.
+Make sure it runs without errors in Replit.
+Do not leave incomplete components.
+Use dummy content and dummy product data where real content is not available.
+Make the design client-ready enough that I can show it as a near-final website and later replace products, prices, images, phone number, address, and article image.

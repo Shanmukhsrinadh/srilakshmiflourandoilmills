@@ -172,91 +172,61 @@ export default function Home() {
       <TrustBadges />
 
       {/* ── Contact ── */}
-      <section id="contact" className="section-pad green-bg">
-        <div className="container">
-          <div className="text-center" style={{ marginBottom: 40 }}>
+      <section id="contact" className="contact-strip">
+        <div className="container contact-strip-inner">
+          {/* Left: info */}
+          <div className="cs-info">
             <span className="tag">Get in Touch</span>
             <div className="divider"></div>
             <h2 className="section-title">Contact Us</h2>
-            <p className="section-subtitle">
-              Reach us through any of the channels below. We respond quickly on WhatsApp.
-            </p>
-          </div>
 
-          <div className="contact-cards-grid">
-            {contactCards.map(card => (
-              <div key={card.title} className="contact-card" style={{ background: card.bg }}>
-                <div className="cc-icon">{card.icon}</div>
-                <h3 className="cc-title">{card.title}</h3>
-                {card.lines.map((line, i) => (
-                  <p key={i} className="cc-line">{line}</p>
-                ))}
-                {card.link && (
-                  <a
-                    href={card.link}
-                    target={card.external ? '_blank' : undefined}
-                    rel={card.external ? 'noreferrer' : undefined}
-                    className="btn btn-primary btn-sm"
-                    style={{ marginTop: 12, display: 'inline-flex', width: 'fit-content' }}
-                  >
-                    {card.linkLabel}
-                  </a>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Map + details */}
-          <div className="contact-map-grid home-subsection">
-            <div>
-              <span className="tag">Location</span>
-              <div className="divider"></div>
-              <h2 className="section-title">Find Our Store</h2>
-              <p className="about-text" style={{ marginBottom: 20 }}>
-                Visit Sri Lakshmi Oil Mills at our store. We welcome walk-in customers during business hours.
-              </p>
-              <div className="contact-detail-list">
-                <div className="cdl-item">
-                  <span className="cdl-icon">📍</span>
-                  <div>
-                    <div className="cdl-label">Store Address</div>
-                    <div className="cdl-value">{BUSINESS.address}</div>
-                  </div>
-                </div>
-                <div className="cdl-item">
-                  <span className="cdl-icon">📞</span>
-                  <div>
-                    <div className="cdl-label">Phone Number</div>
-                    <div className="cdl-value">
-                      <a href={getCallLink()} style={{ color: 'var(--green-deep)', fontWeight: 600 }}>{BUSINESS.phone}</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="cdl-item">
-                  <span className="cdl-icon">🕐</span>
-                  <div>
-                    <div className="cdl-label">Business Hours</div>
-                    <div className="cdl-value">{BUSINESS.timings}</div>
-                  </div>
+            <div className="cs-rows">
+              <div className="cs-row">
+                <span className="cs-icon">📍</span>
+                <div>
+                  <div className="cs-row-label">Address</div>
+                  <div className="cs-row-val">{BUSINESS.address}</div>
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 24 }}>
-                <a href={getCallLink()} className="btn btn-call">📞 Call Now</a>
-                <a href={getWhatsAppLink("Hi Sri Lakshmi Oil Mills, I'd like to enquire about your products.")} target="_blank" rel="noreferrer" className="btn btn-whatsapp">💬 WhatsApp</a>
+              <div className="cs-row">
+                <span className="cs-icon">📞</span>
+                <div>
+                  <div className="cs-row-label">Phone</div>
+                  <a href={getCallLink()} className="cs-row-val cs-link">{BUSINESS.phone}</a>
+                </div>
+              </div>
+              <div className="cs-row">
+                <span className="cs-icon">🕐</span>
+                <div>
+                  <div className="cs-row-label">Hours</div>
+                  <div className="cs-row-val">{BUSINESS.timings}</div>
+                </div>
               </div>
             </div>
-            <div className="contact-map-embed">
-              <iframe
-                title="Sri Lakshmi Flour & Oil Mill Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.0237330343761!2d83.3124423!3d17.7356909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433652bd0f3d%3A0x3c2f95cb5ff8a4a2!2sSri%20Lakshmi%20Flour%20%26%20Oil%20Mill!5e0!3m2!1sen!2sin!4v1715000000000"
-                width="100%" height="100%"
-                style={{ border: 0, borderRadius: 16 }}
-                allowFullScreen="" loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+
+            <div className="cs-btns">
+              <a href={getCallLink()} className="btn btn-call btn-sm">📞 Call Now</a>
+              <a
+                href={getWhatsAppLink("Hi Sri Lakshmi Oil Mills, I'd like to enquire about your products.")}
+                target="_blank" rel="noreferrer"
+                className="btn btn-whatsapp btn-sm"
+              >
+                💬 WhatsApp
+              </a>
             </div>
           </div>
 
+          {/* Right: map */}
+          <div className="cs-map">
+            <iframe
+              title="Sri Lakshmi Flour & Oil Mill Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.0237330343761!2d83.3124423!3d17.7356909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433652bd0f3d%3A0x3c2f95cb5ff8a4a2!2sSri%20Lakshmi%20Flour%20%26%20Oil%20Mill!5e0!3m2!1sen!2sin!4v1715000000000"
+              width="100%" height="100%"
+              style={{ border: 0, borderRadius: 16 }}
+              allowFullScreen="" loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
       </section>
 

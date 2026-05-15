@@ -17,7 +17,6 @@ const ownerPoints = [
 export default function Hero() {
   return (
     <section className="hero-section">
-      {/* Top accent bar */}
       <div className="hero-accent-bar">
         <div className="container hero-accent-inner">
           <span>🌿 Established for over 40 Years · Pure Traditional Oils · No Additives · Fresh Stock</span>
@@ -25,7 +24,7 @@ export default function Hero() {
       </div>
 
       <div className="container hero-inner">
-        {/* ── Left: Text Content ── */}
+        {/* ── Left: Text ── */}
         <div className="hero-content">
           <div className="hero-label-row">
             <span className="hero-label">Sri Lakshmi Oil Mills</span>
@@ -61,36 +60,28 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ── Right: Mill image + Owner card ── */}
+        {/* ── Right: Owner card (full column) ── */}
         <div className="hero-visual">
-          {/* Oil mill image */}
-          <div className="hero-img-frame">
-            <div className="hero-img-inner">
-              <div className="placeholder-img hero-ph">
-                <span style={{ fontSize: '3.5rem', opacity: 0.3 }}>🛢️</span>
-                <span style={{ fontWeight: 700, fontSize: '0.9rem', color: '#5a8a6a' }}>Oil Mill Image</span>
-                <small style={{ color: '#8aaa9a', fontSize: '0.7rem' }}>Replace: src/assets/images/oil-hero.jpg</small>
-              </div>
-            </div>
-            <div className="hero-frame-deco" />
-          </div>
-
-          {/* Owner card — integrated into hero */}
           <div className="hero-owner-card">
-            <div className="hoc-img">
-              <div className="placeholder-img hoc-ph">
-                <span style={{ fontSize: '2rem', opacity: 0.4 }}>👨‍🌾</span>
+            {/* Portrait image */}
+            <div className="hoc-portrait">
+              <div className="placeholder-img hoc-portrait-img">
+                <span style={{ fontSize: '4rem', opacity: 0.35 }}>👨‍🌾</span>
+                <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#5a8a6a' }}>Owner Photo</span>
+                <small style={{ color: '#8aaa9a', fontSize: '0.65rem' }}>Replace: src/assets/images/owner.jpg</small>
               </div>
-              <div className="hoc-badge">
+              <div className="hoc-exp-badge">
                 <span className="hoc-badge-num">40+</span>
-                <span className="hoc-badge-lbl">Yrs Exp</span>
+                <span className="hoc-badge-lbl">Years of<br/>Experience</span>
               </div>
             </div>
+
+            {/* Content */}
             <div className="hoc-body">
               <div className="hoc-label">About the Owner</div>
-              <div className="hoc-title">Quality You Can Trust<br />by Just One Look</div>
+              <h3 className="hoc-title">Quality You Can Trust<br />by Just One Look</h3>
               <p className="hoc-desc">
-                Over 40 years of hands-on experience in traditional oil milling. The owner personally checks every batch for purity and freshness.
+                With over 40 years of hands-on experience in traditional oil milling, the owner of Sri Lakshmi Oil Mills has built deep knowledge in identifying product quality, freshness, and purity. Every batch carries his personal stamp of approval.
               </p>
               <div className="hoc-points">
                 {ownerPoints.map(p => (

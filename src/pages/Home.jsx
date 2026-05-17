@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import ProductCard from '../components/ProductCard'
@@ -50,6 +51,20 @@ const contactCards = [
 ]
 
 export default function Home() {
+  const scrollRef = useRef(null)
+
+  useEffect(() => {
+    const el = scrollRef.current
+    if (!el) return
+    const onWheel = (e) => {
+      if (Math.abs(e.deltaX) > 0) return
+      e.preventDefault()
+      el.scrollLeft += e.deltaY * 1.2
+    }
+    el.addEventListener('wheel', onWheel, { passive: false })
+    return () => el.removeEventListener('wheel', onWheel)
+  }, [])
+
   return (
     <div className="home-page">
       <Hero />
@@ -69,12 +84,14 @@ export default function Home() {
             <Link to="/products" className="btn btn-outline">View All Products →</Link>
           </div>
         </div>
-        <div className="featured-scroll-track">
-          {featuredProducts.map(product => (
-            <div className="featured-scroll-card" key={product.id}>
-              <ProductCard product={product} />
-            </div>
-          ))}
+        <div className="featured-scroll-wrapper">
+          <div className="featured-scroll-track" ref={scrollRef}>
+            {featuredProducts.map(product => (
+              <div className="featured-scroll-card" key={product.id}>
+                <ProductCard product={product} />
+              </div>
+            ))}
+          </div>
         </div>
         <div className="container">
           <div className="featured-scroll-hint">← Scroll to see more →</div>

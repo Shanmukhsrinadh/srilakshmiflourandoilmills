@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { getProductWhatsAppLink, getCallLink } from '../config/business'
+import { getAssetUrl } from '../utils/assets'
 import ProductCard from '../components/ProductCard'
 import productsData from '../data/products.json'
 import './ProductDetails.css'
@@ -55,17 +56,21 @@ export default function ProductDetails() {
             {/* Product Image */}
             <div className="pd-image-col">
               <div className="pd-main-img">
-                <div className="placeholder-img" style={{ height: '100%', borderRadius: 12 }}>
-                  <span className="ph-icon" style={{ fontSize: '4rem' }}>{icon}</span>
-                  <span style={{ fontWeight: 700, fontSize: '1rem' }}>{product.name}</span>
-                  <small>Replace with product image</small>
-                </div>
+                {product.image ? (
+                  <img
+                    src={getAssetUrl(product.image)}
+                    alt={`${product.name} - Sri Lakshmi Flour & Oil Mill`}
+                    className="pd-photo"
+                  />
+                ) : (
+                  <div className="placeholder-img" style={{ height: '100%', borderRadius: 12 }}>
+                    <span className="ph-icon" style={{ fontSize: '4rem' }}>{icon}</span>
+                    <span style={{ fontWeight: 700, fontSize: '1rem' }}>{product.name}</span>
+                  </div>
+                )}
               </div>
               <div className="pd-img-tags">
                 <span className="tag">{product.category}</span>
-                <span className={`pd-avail ${product.availability === 'Available' ? 'avail-yes' : 'avail-no'}`}>
-                  {product.availability === 'Available' ? '● In Stock' : '● Out of Stock'}
-                </span>
               </div>
             </div>
 
@@ -73,19 +78,14 @@ export default function ProductDetails() {
             <div className="pd-info-col">
               <div className="pd-category-tag">{product.category}</div>
               <h1 className="pd-name">{product.name}</h1>
-              <div className="pd-price">{product.priceLabel}</div>
+
+              <div className="pd-standard-tags">
+                {['No Palm Oil', 'No Artificial Color', 'No Preservatives', 'Authentic Taste'].map(tag => (
+                  <span key={tag} className="pd-std-tag">✓ {tag}</span>
+                ))}
+              </div>
 
               <p className="pd-short-desc">{product.shortDescription}</p>
-
-              {/* Sizes */}
-              <div className="pd-section">
-                <h4 className="pd-section-title">Available Sizes</h4>
-                <div className="pd-sizes">
-                  {product.sizes.map(s => (
-                    <span key={s} className="pd-size-chip">{s}</span>
-                  ))}
-                </div>
-              </div>
 
               {/* Highlights */}
               {product.highlights && product.highlights.length > 0 && (

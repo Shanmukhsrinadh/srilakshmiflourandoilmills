@@ -18,6 +18,32 @@
 }
 
 /* ── Featured horizontal scroll ── */
+.featured-scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-scroll-wrapper::before,
+.featured-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 16px;
+  width: 72px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.featured-scroll-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--cream) 0%, transparent 100%);
+}
+
+.featured-scroll-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--cream) 0%, transparent 100%);
+}
+
 .featured-scroll-track {
   display: flex;
   gap: 16px;
@@ -26,13 +52,17 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  cursor: grab;
 }
+.featured-scroll-track:active { cursor: grabbing; }
 .featured-scroll-track::-webkit-scrollbar { display: none; }
+
 .featured-scroll-card {
-  flex: 0 0 240px;
+  flex: 0 0 262px;
   scroll-snap-align: start;
-  min-width: 240px;
+  min-width: 262px;
 }
+
 .featured-scroll-hint {
   text-align: center;
   font-size: 0.75rem;
@@ -45,6 +75,12 @@
   .featured-scroll-track {
     padding-left: calc((100vw - 1200px) / 2 + 24px);
     padding-right: calc((100vw - 1200px) / 2 + 24px);
+  }
+  .featured-scroll-wrapper::before {
+    width: calc((100vw - 1200px) / 2 + 60px);
+  }
+  .featured-scroll-wrapper::after {
+    width: calc((100vw - 1200px) / 2 + 60px);
   }
 }
 

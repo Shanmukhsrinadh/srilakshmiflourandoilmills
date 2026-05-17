@@ -10,9 +10,6 @@ function applyFilters(products, filters) {
   if (filters.category && filters.category !== 'All') {
     result = result.filter(p => p.category === filters.category)
   }
-  if (filters.availability && filters.availability !== 'all') {
-    result = result.filter(p => p.availability === filters.availability)
-  }
   if (filters.search) {
     const q = filters.search.toLowerCase()
     result = result.filter(p =>
@@ -23,8 +20,6 @@ function applyFilters(products, filters) {
   }
   if (filters.sort === 'name-asc') result.sort((a, b) => a.name.localeCompare(b.name))
   else if (filters.sort === 'name-desc') result.sort((a, b) => b.name.localeCompare(a.name))
-  else if (filters.sort === 'price-asc') result.sort((a, b) => a.price - b.price)
-  else if (filters.sort === 'price-desc') result.sort((a, b) => b.price - a.price)
   return result
 }
 
@@ -32,7 +27,6 @@ export default function Products() {
   const [searchParams] = useSearchParams()
   const [filters, setFilters] = useState({
     category: searchParams.get('category') || 'All',
-    availability: 'all',
     sort: 'default',
     search: searchParams.get('search') || '',
   })

@@ -1,16 +1,14 @@
 import './ProductFilters.css'
 
-const categories = ['All', 'Oils', 'Millets', 'Snacks', 'Sweets', 'Pickles', 'Powders', 'Others']
+const categories = ['All', 'Oils', 'Millets', 'Snacks', 'Pickles', 'Powders', 'Others']
 const sortOptions = [
-  { value: 'default', label: 'Default' },
-  { value: 'name-asc', label: 'Name A-Z' },
-  { value: 'name-desc', label: 'Name Z-A' },
-  { value: 'price-asc', label: 'Price: Low to High' },
-  { value: 'price-desc', label: 'Price: High to Low' },
+  { value: 'default', label: 'Default Order' },
+  { value: 'name-asc', label: 'Name A–Z' },
+  { value: 'name-desc', label: 'Name Z–A' },
 ]
 
 export default function ProductFilters({ filters, onChange, totalCount }) {
-  const { category, availability, sort, search } = filters
+  const { category, sort, search } = filters
 
   const update = (key, value) => onChange({ ...filters, [key]: value })
 
@@ -46,14 +44,6 @@ export default function ProductFilters({ filters, onChange, totalCount }) {
         </div>
         <div className="pf-right">
           <select
-            value={availability}
-            onChange={e => update('availability', e.target.value)}
-            className="pf-select"
-          >
-            <option value="all">All Status</option>
-            <option value="Available">Available Only</option>
-          </select>
-          <select
             value={sort}
             onChange={e => update('sort', e.target.value)}
             className="pf-select"
@@ -67,10 +57,10 @@ export default function ProductFilters({ filters, onChange, totalCount }) {
 
       <div className="pf-result-count">
         <span>{totalCount} product{totalCount !== 1 ? 's' : ''} found</span>
-        {(category !== 'All' || search || availability !== 'all') && (
+        {(category !== 'All' || search) && (
           <button
             className="pf-reset"
-            onClick={() => onChange({ category: 'All', availability: 'all', sort: 'default', search: '' })}
+            onClick={() => onChange({ category: 'All', sort: 'default', search: '' })}
           >
             ✕ Clear Filters
           </button>

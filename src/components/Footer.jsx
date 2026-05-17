@@ -2,84 +2,126 @@ import { Link } from 'react-router-dom'
 import { BUSINESS, getWhatsAppLink, getCallLink } from '../config/business'
 import './Footer.css'
 
-const categories = ['Oils', 'Millets', 'Snacks', 'Sweets', 'Pickles', 'Powders', 'Others']
+const quickLinks = [
+  { to: '/', label: 'Home' },
+  { to: '/products', label: 'All Products' },
+  { to: '/#about', label: 'About Us' },
+  { to: '/#contact', label: 'Contact Us' },
+]
+
+const categoryLinks = [
+  { cat: 'Oils', label: 'Cold Pressed Oils' },
+  { cat: 'Millets', label: 'Millet Products' },
+  { cat: 'Snacks', label: 'Traditional Snacks' },
+  { cat: 'Pickles', label: 'Homemade Pickles' },
+  { cat: 'Powders', label: 'Spice Powders (Podi)' },
+  { cat: 'Others', label: 'Chutneys & Mixes' },
+]
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" itemScope itemType="https://schema.org/LocalBusiness">
       <div className="footer-main">
         <div className="container footer-grid">
+
+          {/* Brand col */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="footer-logo-icon">🛢️</span>
+              <span className="footer-logo-icon" aria-hidden="true">🛢️</span>
               <div>
-                <div className="footer-logo-name">{BUSINESS.name}</div>
+                <div className="footer-logo-name" itemProp="name">{BUSINESS.name}</div>
                 <div className="footer-logo-sub">Pure · Traditional · Trusted</div>
               </div>
             </div>
-            <p className="footer-desc">
-              Bringing you the finest traditional oils and food products backed by 40+ years of hands-on experience. Quality you can trust by just one look.
+            <p className="footer-desc" itemProp="description">
+              Sri Lakshmi Flour &amp; Oil Mill has been providing traditional cold pressed oils, homemade pickles, spice powders, and authentic Andhra food products for over 40 years. Every product is made without palm oil, artificial colours, or preservatives.
             </p>
-            <div className="footer-badges">
-              <span className="f-badge">✅ 40+ Years</span>
-              <span className="f-badge">✅ Quality Checked</span>
+            <div className="footer-badges" aria-label="Quality assurance badges">
+              <span className="f-badge">✅ 40+ Years Trusted</span>
+              <span className="f-badge">✅ No Palm Oil</span>
+              <span className="f-badge">✅ No Preservatives</span>
               <span className="f-badge">✅ Traditional Mill</span>
             </div>
             <div className="footer-contact-btns">
-              <a href={getCallLink()} className="btn btn-call btn-sm">📞 Call Now</a>
-              <a href={getWhatsAppLink("Hi Sri Lakshmi Oil Mills, I'd like to enquire about your products.")} target="_blank" rel="noreferrer" className="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+              <a href={getCallLink()} className="btn btn-call btn-sm" aria-label="Call Sri Lakshmi Oil Mills">📞 Call Now</a>
+              <a
+                href={getWhatsAppLink("Hi Sri Lakshmi Oil Mills, I'd like to enquire about your products.")}
+                target="_blank" rel="noreferrer"
+                className="btn btn-whatsapp btn-sm"
+                aria-label="WhatsApp Sri Lakshmi Oil Mills"
+              >
+                💬 WhatsApp
+              </a>
             </div>
           </div>
 
+          {/* Quick links */}
           <div className="footer-col">
-            <h4 className="footer-heading">Quick Links</h4>
-            <ul className="footer-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/products">All Products</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
-            </ul>
+            <h3 className="footer-heading">Quick Links</h3>
+            <nav aria-label="Footer quick navigation">
+              <ul className="footer-links">
+                {quickLinks.map(l => (
+                  <li key={l.label}>
+                    <Link to={l.to}>{l.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
 
+          {/* Product categories */}
           <div className="footer-col">
-            <h4 className="footer-heading">Product Categories</h4>
-            <ul className="footer-links">
-              {categories.map(cat => (
-                <li key={cat}>
-                  <Link to={`/products?category=${cat}`}>{cat}</Link>
-                </li>
-              ))}
-            </ul>
+            <h3 className="footer-heading">Our Products</h3>
+            <nav aria-label="Product categories navigation">
+              <ul className="footer-links">
+                {categoryLinks.map(c => (
+                  <li key={c.cat}>
+                    <Link to={`/products?category=${c.cat}`}>{c.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
 
+          {/* Contact details */}
           <div className="footer-col">
-            <h4 className="footer-heading">Contact Details</h4>
-            <ul className="footer-contact-list">
-              <li>
-                <span className="fc-icon">📍</span>
-                <span>{BUSINESS.address}</span>
-              </li>
-              <li>
-                <span className="fc-icon">📞</span>
-                <a href={getCallLink()}>{BUSINESS.phone}</a>
-              </li>
-              <li>
-                <span className="fc-icon">💬</span>
-                <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">WhatsApp Enquiry</a>
-              </li>
-              <li>
-                <span className="fc-icon">🕐</span>
+            <h3 className="footer-heading">Find Us</h3>
+            <address className="footer-contact-list" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+              <div className="fc-item">
+                <span className="fc-icon" aria-hidden="true">📍</span>
+                <span itemProp="streetAddress">{BUSINESS.address}</span>
+              </div>
+              <div className="fc-item">
+                <span className="fc-icon" aria-hidden="true">📞</span>
+                <a href={getCallLink()} itemProp="telephone" aria-label={`Call ${BUSINESS.phone}`}>{BUSINESS.phone}</a>
+              </div>
+              <div className="fc-item">
+                <span className="fc-icon" aria-hidden="true">💬</span>
+                <a href={getWhatsAppLink()} target="_blank" rel="noreferrer" aria-label="WhatsApp enquiry">WhatsApp Enquiry</a>
+              </div>
+              <div className="fc-item">
+                <span className="fc-icon" aria-hidden="true">🕐</span>
                 <span>{BUSINESS.timings}</span>
-              </li>
-            </ul>
+              </div>
+            </address>
+
+            <div className="footer-seo-note">
+              <p>Serving Andhra Pradesh with pure, traditional oils and homemade food products. Enquire for fresh stock.</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <p>© {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.</p>
-          <p className="footer-credit">Designed and developed by <span>Your Brand Name</span></p>
+          <p>© {new Date().getFullYear()} <span itemProp="name">{BUSINESS.name}</span>. All rights reserved. Traditional oils &amp; homemade products, Andhra Pradesh.</p>
+          <nav aria-label="Footer legal links">
+            <ul className="footer-bottom-links">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/products">Products</Link></li>
+              <li><Link to="/#contact">Contact</Link></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>

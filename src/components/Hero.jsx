@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { getWhatsAppLink } from '../config/business'
+import ownerPhoto from '../assets/images/owner.jpeg'
 import './Hero.css'
 
 const highlights = [
@@ -65,11 +66,11 @@ export default function Hero() {
           <div className="hero-owner-card">
             {/* Portrait image */}
             <div className="hoc-portrait">
-              <div className="placeholder-img hoc-portrait-img">
-                <span style={{ fontSize: '4rem', opacity: 0.35 }}>👨‍🌾</span>
-                <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#5a8a6a' }}>Owner Photo</span>
-                <small style={{ color: '#8aaa9a', fontSize: '0.65rem' }}>Replace: src/assets/images/owner.jpg</small>
-              </div>
+              <img
+                src={ownerPhoto}
+                alt="Owner of Sri Lakshmi Flour & Oil Mill — 40+ years of experience"
+                className="hoc-portrait-img"
+              />
               <div className="hoc-exp-badge">
                 <span className="hoc-badge-num">40+</span>
                 <span className="hoc-badge-lbl">Years of<br/>Experience</span>

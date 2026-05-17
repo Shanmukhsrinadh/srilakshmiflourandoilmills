@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import newspaperImg from '../assets/images/newspaper-article.png'
 import './NewspaperFeature.css'
 
 export default function NewspaperFeature() {
@@ -20,12 +21,11 @@ export default function NewspaperFeature() {
           <div className="newspaper-inner">
             <div className="newspaper-img-col">
               <div className="newspaper-img-wrap" onClick={() => setModalOpen(true)} title="Click to view larger">
-                <div className="placeholder-img newspaper-ph">
-                  <span className="ph-icon">📰</span>
-                  <span>Newspaper Article Image</span>
-                  <small>Replace with: src/assets/images/newspaper-article.jpg</small>
-                  <div className="np-click-hint">🔍 Click to view larger</div>
-                </div>
+                <img
+                  src={newspaperImg}
+                  alt="Sri Lakshmi Oil Mills featured in Visakha Samacharam Telugu newspaper"
+                  className="newspaper-real-img"
+                />
                 <div className="newspaper-overlay">
                   <span>🔍 View Larger</span>
                 </div>
@@ -58,11 +58,11 @@ export default function NewspaperFeature() {
             <button className="np-modal-close" onClick={() => setModalOpen(false)}>✕</button>
             <h3 className="np-modal-title">📰 Newspaper Feature</h3>
             <div className="np-modal-img">
-              <div className="placeholder-img" style={{ height: '100%', borderRadius: 8 }}>
-                <span className="ph-icon">📰</span>
-                <span>Newspaper Article</span>
-                <small>Replace with: src/assets/images/newspaper-article.jpg</small>
-              </div>
+              <img
+                src={newspaperImg}
+                alt="Sri Lakshmi Oil Mills featured in Visakha Samacharam Telugu newspaper — full article"
+                style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: 8 }}
+              />
             </div>
           </div>
         </div>

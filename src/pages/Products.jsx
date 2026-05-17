@@ -43,20 +43,18 @@ export default function Products() {
 
   return (
     <div className="products-page">
-      <div className="products-hero">
-        <div className="container">
-          <h1>Our Products</h1>
-          <p>Browse our full range of traditional oils, millets, snacks, sweets, pickles and more.</p>
-          <div className="products-hero-breadcrumb">
-            <a href="/">Home</a> <span>/</span> <span>Products</span>
-          </div>
-        </div>
-      </div>
-
       <div className="section-pad">
         <div className="container">
-          <ProductFilters filters={filters} onChange={setFilters} totalCount={filtered.length} />
-          <ProductGrid products={filtered} emptyMessage="No products match your search" />
+          <ProductFilters
+            filters={filters}
+            onChange={setFilters}
+            totalCount={filtered.length}
+          />
+
+          <ProductGrid
+            products={filtered}
+            emptyMessage="No products match your search"
+          />
         </div>
       </div>
     </div>

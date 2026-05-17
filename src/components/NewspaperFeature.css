@@ -33,6 +33,14 @@
   height: 100%;
 }
 
+.newspaper-real-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 .np-click-hint {
   margin-top: 8px;
   font-size: 0.75rem;

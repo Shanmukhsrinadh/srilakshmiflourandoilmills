@@ -36,11 +36,11 @@ export default function About() {
         <div className="container">
           <div className="about-intro-grid">
             <div className="about-intro-img">
-              <div className="placeholder-img about-ph">
-                <span className="ph-icon">🏭</span>
-                <span>Sri Lakshmi Oil Mills</span>
-                <small>Replace with shop/mill image</small>
-              </div>
+              <img
+                src="/images/shop/shop_entrnce.webp"
+                alt="Sri Lakshmi Flour & Oil Mill shop entrance"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
+              />
               <div className="about-stat-box">
                 <div className="asb-row">
                   <div className="asb-stat">
@@ -101,11 +101,11 @@ export default function About() {
             </div>
             <div className="about-owner-img-col">
               <div className="about-owner-img">
-                <div className="placeholder-img about-ph">
-                  <span className="ph-icon">👨‍🌾</span>
-                  <span>Owner Photo</span>
-                  <small>Replace with owner.jpg</small>
-                </div>
+                <img
+                  src="/images/shop/owner_photo.webp"
+                  alt="Owner of Sri Lakshmi Flour & Oil Mill"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
+                />
               </div>
               <div className="owner-exp-badge" style={{ position: 'absolute', bottom: -20, right: -20 }}>
                 <div className="oeb-num">40+</div>

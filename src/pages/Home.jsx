@@ -132,11 +132,11 @@ export default function Home() {
           <div className="about-intro-grid">
 
             <div className="about-intro-img">
-              <div className="placeholder-img about-ph">
-                <span className="ph-icon">🏭</span>
-                <span>Sri Lakshmi Oil Mills</span>
-                <small>Replace with shop/mill image</small>
-              </div>
+              <img
+                src="/images/shop/shop_entrnce.webp"
+                alt="Sri Lakshmi Flour & Oil Mill shop"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
+              />
 
               <div className="about-stat-box">
                 <div className="asb-row">

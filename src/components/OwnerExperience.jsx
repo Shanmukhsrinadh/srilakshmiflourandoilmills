@@ -1,3 +1,4 @@
+import ownerPhoto from '../assets/images/owner.webp'
 import './OwnerExperience.css'
 
 const points = [
@@ -13,11 +14,12 @@ export default function OwnerExperience() {
       <div className="container owner-inner">
         <div className="owner-image-col">
           <div className="owner-img-wrap">
-            <div className="placeholder-img owner-ph">
-              <span className="ph-icon">👨‍🌾</span>
-              <span>Owner Photo</span>
-              <small>Replace with: src/assets/images/owner.jpg</small>
-            </div>
+            <img
+              src={ownerPhoto}
+              alt="Owner of Sri Lakshmi Flour & Oil Mill"
+              className="owner-real-img"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }}
+            />
           </div>
           <div className="owner-exp-badge">
             <div className="oeb-num">40+</div>

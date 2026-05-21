@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { getWhatsAppLink } from '../config/business'
-import ownerPhoto from '../assets/images/owner.jpeg'
+import ownerPhoto from '../assets/images/owner.webp'
 import './Hero.css'
 
 const highlights = [

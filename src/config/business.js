@@ -4,7 +4,7 @@ export const BUSINESS = {
   phone: "9848183737",
   whatsapp: "919848183737",
   address: "Sri Lakshmi Flour & Oil Mill, Andhra Pradesh",
-  mapsUrl: "https://maps.app.goo.gl/N7U2enGKL8DL2nQL8",
+  mapsUrl: "https://maps.app.goo.gl/4tbsRDvH8MSnmbZ47",
   mapsEmbed: "https://www.google.com/maps?q=17.7357809,83.3127459&z=17&output=embed",
   timings: "Mon - Sat: 8:00 AM - 8:00 PM, Sun: 9:00 AM - 1:00 PM",
   email: "",

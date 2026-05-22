@@ -1,222 +1,329 @@
 [
   {
-    "id": "SLOM-001",
-    "name": "Karam Podi",
-    "slug": "karam-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/karam_podi.webp",
-    "featured": true,
-    "shortDescription": "Spicy and aromatic Karam Podi — a bold Andhra-style chilli powder blend.",
-    "description": "Karam Podi is a fiery red chilli powder blend made with fresh dried chillies, roasted lentils, and traditional spices. Stone-ground fresh for bold heat and deep flavour. Best mixed with hot rice and sesame oil.",
-    "highlights": ["Fresh red chillies", "Stone-ground", "No fillers", "Homemade recipe"]
-  },
-  {
-    "id": "SLOM-002",
-    "name": "Pesara Podi",
-    "slug": "pesara-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/pesara_podi.webp",
+    "id": "SLOM-O01",
+    "name": "Cold Pressed Oil",
+    "slug": "cold-pressed-oil",
+    "category": "Oils",
+    "subCategory": "Cold Pressed Oil",
+    "image": "",
     "featured": false,
-    "shortDescription": "Freshly ground green gram (Pesara) podi — protein-rich and delicious.",
-    "description": "Pesara Podi is made from roasted green gram (moong dal) with traditional spices. Rich in protein and easy to digest. Mix with hot rice and ghee for a simple nutritious meal.",
-    "highlights": ["Roasted green gram", "Protein-rich", "Easy to digest", "Homemade recipe"]
+    "shortDescription": "Pure cold-pressed oil extracted traditionally — no heat, no chemicals, full nutrition.",
+    "description": "Our cold-pressed oils are extracted using traditional wooden ghani (press) method with no heat or chemicals. This preserves natural vitamins, flavour, and aroma that refined oils lose during processing.",
+    "highlights": [
+      "No heat processing",
+      "No chemicals",
+      "Full natural nutrition",
+      "Traditional ghani method"
+    ]
   },
   {
-    "id": "SLOM-003",
-    "name": "Dhanyalu Podi",
-    "slug": "dhanyalu-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/dhanyalu_podi.webp",
+    "id": "SLOM-O02",
+    "name": "Pappu Nune",
+    "slug": "pappu-nune",
+    "category": "Oils",
+    "subCategory": "Cold Pressed Oil",
+    "image": "",
     "featured": false,
-    "shortDescription": "Freshly ground coriander seed podi with warm earthy flavour.",
-    "description": "Dhanyalu Podi is made from freshly roasted and stone-ground coriander seeds. Adds depth and warmth to chutneys, gravies, and rice dishes. Pure spice with no fillers.",
-    "highlights": ["Freshly roasted coriander", "Stone-ground", "Pure spice — no fillers", "Homemade recipe"]
+    "shortDescription": "Traditional Pappu Nune (lentil oil) — a rare and nutritious cooking oil.",
+    "description": "Pappu Nune is a traditional oil pressed from lentils, used in Andhra cooking for its distinct flavour and nutritional benefits. A rare traditional product made fresh in small batches.",
+    "highlights": [
+      "Lentil-pressed oil",
+      "Rich in protein",
+      "Rare traditional product",
+      "Small batches"
+    ]
   },
   {
-    "id": "SLOM-004",
-    "name": "Pudina Podi",
-    "slug": "pudina-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/pudina_podi.webp",
+    "id": "SLOM-M01",
+    "name": "Jonna Idly",
+    "slug": "jonna-idly",
+    "category": "Millets",
+    "subCategory": "Millet Items",
+    "image": "",
     "featured": false,
-    "shortDescription": "Aromatic dried mint (Pudina) powder — refreshing and flavourful.",
-    "description": "Pudina Podi is made from dried fresh mint leaves blended with spices. Adds a cool, refreshing flavour to rice, chutneys, and snacks. A traditional digestive-friendly spice powder.",
-    "highlights": ["Dried fresh mint leaves", "Stone-ground", "Digestive benefits", "Homemade recipe"]
+    "shortDescription": "Soft and healthy Jonna (Sorghum) Idly — a nutritious traditional millet breakfast.",
+    "description": "Freshly made Jonna Idly using sorghum millet batter. A traditional Andhra breakfast that is rich in fibre, gluten-free, and ideal for all ages including diabetics.",
+    "highlights": [
+      "Sorghum millet base",
+      "Gluten-free",
+      "Diabetic friendly",
+      "Traditional recipe"
+    ]
   },
   {
-    "id": "SLOM-005",
-    "name": "Jellakarra Podi",
-    "slug": "jellakarra-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/jellakarra_podi.webp",
+    "id": "SLOM-M02",
+    "name": "Millet Dosa",
+    "slug": "millet-dosa",
+    "category": "Millets",
+    "subCategory": "Millet Items",
+    "image": "",
     "featured": false,
-    "shortDescription": "Freshly ground cumin (Jeelakarra) powder with bold earthy aroma.",
-    "description": "Jellakarra Podi is made from freshly roasted and ground cumin seeds. Rich in digestive properties and deep earthy flavour. Used in dals, rasam, rice, and traditional Andhra recipes.",
-    "highlights": ["Freshly roasted cumin", "Stone-ground", "Digestive properties", "Homemade recipe"]
+    "shortDescription": "Crispy millet dosa — traditional, healthy, and gluten-free.",
+    "description": "Millet Dosa made from a blend of healthy millets. Crispy, light, and packed with nutrients. A great alternative to regular rice dosa for health-conscious families.",
+    "highlights": [
+      "Multi-millet blend",
+      "High fibre",
+      "Gluten-free",
+      "Light and crispy"
+    ]
   },
   {
-    "id": "SLOM-006",
-    "name": "Kobbari Podi",
-    "slug": "kobbari-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/kobbari_podi.webp",
+    "id": "SLOM-M03",
+    "name": "Ragi Idly",
+    "slug": "ragi-idly",
+    "category": "Millets",
+    "subCategory": "Millet Items",
+    "image": "",
     "featured": false,
-    "shortDescription": "Freshly made coconut (Kobbari) podi — nutty and aromatic.",
-    "description": "Kobbari Podi is made from freshly dried and ground coconut with traditional spices. Rich, nutty flavour that pairs beautifully with idly, dosa, and hot rice. Made fresh in small batches.",
-    "highlights": ["Fresh dried coconut", "Stone-ground", "Rich nutty flavour", "Homemade recipe"]
+    "shortDescription": "Soft Ragi (Finger Millet) Idly — calcium-rich and traditionally made.",
+    "description": "Ragi Idly made with finger millet, the highest source of natural calcium among grains. Soft, nutritious, and ideal for children and growing families.",
+    "highlights": [
+      "Finger millet (Ragi)",
+      "Highest natural calcium",
+      "Good for bones",
+      "Soft texture"
+    ]
   },
   {
-    "id": "SLOM-007",
-    "name": "Miriyalu Podi",
-    "slug": "miriyalu-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/miriyalu_podi.webp",
+    "id": "SLOM-M04",
+    "name": "Vegetable Idly",
+    "slug": "vegetable-idly",
+    "category": "Millets",
+    "subCategory": "Millet Items",
+    "image": "",
     "featured": false,
-    "shortDescription": "Freshly ground black pepper powder with sharp, bold flavour.",
-    "description": "Miriyalu Podi is freshly stone-ground black pepper powder with bold, sharp flavour. Used in Andhra rasam, curries, and as a table spice. Pure pepper with no fillers or additives.",
-    "highlights": ["Freshly stone-ground", "Pure black pepper", "No fillers", "Homemade recipe"]
+    "shortDescription": "Colourful vegetable idly packed with nutrition and natural goodness.",
+    "description": "Soft idly stuffed with fresh vegetables and traditional spices. Made with natural colours from vegetables only — no artificial colours. A wholesome breakfast for the whole family.",
+    "highlights": [
+      "Fresh vegetable stuffing",
+      "No artificial colour",
+      "Wholesome breakfast",
+      "Kid-friendly"
+    ]
   },
   {
-    "id": "SLOM-008",
-    "name": "Velluli Podi",
-    "slug": "velluli-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/velluli_podi.webp",
+    "id": "SLOM-S01",
+    "name": "Chegodi",
+    "slug": "chegodi",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Pure garlic (Velluli) powder with bold flavour — no fillers, just pure garlic.",
-    "description": "Made from sun-dried garlic cloves ground to a fine powder. Intense garlic flavour for use in masalas, marinades, and everyday cooking. Pure and unadulterated.",
-    "highlights": ["Sun-dried garlic cloves", "Pure — no fillers", "Intense flavour", "Homemade recipe"]
+    "shortDescription": "Crispy traditional Chegodi rings made in pure oil — a classic Andhra snack.",
+    "description": "Chegodi is a classic Andhra snack made with rice flour, sesame seeds, and mild spices. Fried in pure groundnut oil for authentic taste and long-lasting crunch.",
+    "highlights": [
+      "Rice flour base",
+      "Fried in pure groundnut oil",
+      "Traditional Andhra recipe",
+      "Crispy texture"
+    ]
   },
   {
-    "id": "SLOM-009",
-    "name": "Shonti Podi",
-    "slug": "shonti-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/shonti_podi.webp",
+    "id": "SLOM-S02",
+    "name": "Janthikalu",
+    "slug": "janthikalu",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Warming dry ginger (Shonti) powder — used in cooking and as a natural remedy.",
-    "description": "Shonti Podi is made from sun-dried ginger root ground to a fine powder. Used in Andhra cooking for warmth and flavour, and traditionally consumed for digestion and immunity.",
-    "highlights": ["Sun-dried ginger root", "Warming properties", "Digestive aid", "Homemade recipe"]
+    "shortDescription": "Traditional Janthikalu made with rice flour and fresh spices — crispy and flavourful.",
+    "description": "Janthikalu are spiral-shaped rice flour snacks deep-fried in pure oil. A popular Andhra festival snack made fresh in small batches with no artificial flavours.",
+    "highlights": [
+      "Rice flour base",
+      "Deep-fried in pure oil",
+      "Festival special",
+      "Fresh small batches"
+    ]
   },
   {
-    "id": "SLOM-010",
-    "name": "Kakarakayya Podi",
-    "slug": "kakarakayya-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/kakarakayya.webp",
+    "id": "SLOM-S03",
+    "name": "Jonna Chekkalu",
+    "slug": "jonna-chekkalu",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Bitter gourd (Kakarakayya) powder — a traditional health remedy.",
-    "description": "Kakarakayya Podi is made from dried and powdered bitter gourd. A traditional Andhra health food known for its blood sugar balancing and digestive properties. Stone-ground fresh.",
-    "highlights": ["Dried bitter gourd", "Blood sugar benefits", "Digestive aid", "Homemade recipe"]
+    "shortDescription": "Crispy Jonna (Jowar) Chekkalu — a healthy millet-based traditional snack.",
+    "description": "Jonna Chekkalu are rice crackers made with jowar (sorghum) flour. A healthier take on the traditional chekkalu snack, rich in fibre and made in pure oil.",
+    "highlights": [
+      "Jowar flour base",
+      "High fibre millet",
+      "Fried in pure oil",
+      "Traditional recipe"
+    ]
   },
   {
-    "id": "SLOM-011",
-    "name": "Kottimera Karam",
-    "slug": "kottimera-karam",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/kottimera_karram.webp",
+    "id": "SLOM-S04",
+    "name": "Boondi Mixture",
+    "slug": "boondi-mixture",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Aromatic coriander (Kottimera) spice blend — fresh and flavourful.",
-    "description": "Kottimera Karam is a traditional Andhra spice blend made with dried coriander leaves, red chillies, and spices. Adds bold flavour to rice, dosa, and snacks. Stone-ground fresh.",
-    "highlights": ["Dried coriander leaves", "Traditional spice blend", "Stone-ground", "Homemade recipe"]
+    "shortDescription": "Crunchy Boondi Mixture with a perfect blend of spices and freshness.",
+    "description": "Our Boondi Mixture is made fresh with crunchy boondi, peanuts, curry leaves, and spices. Fried in pure groundnut oil with no artificial flavours or colourings.",
+    "highlights": [
+      "Freshly made",
+      "Pure groundnut oil",
+      "No artificial flavours",
+      "Crunchy texture"
+    ]
   },
   {
-    "id": "SLOM-012",
-    "name": "Sambar Podi",
-    "slug": "sambar-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/sambar_podi.webp",
-    "featured": true,
-    "shortDescription": "Aromatic homemade sambar podi ground fresh with traditional spice blends.",
-    "description": "Our Sambar Podi is made from a traditional blend of coriander, cumin, red chillies, and other aromatic spices. Freshly roasted and stone-ground for deep, complex flavour in every pot.",
-    "highlights": ["Traditional spice blend", "Freshly roasted", "Stone-ground", "Homemade recipe"]
-  },
-  {
-    "id": "SLOM-013",
-    "name": "Rassam Podi",
-    "slug": "rassam-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/rassam_podi.webp",
+    "id": "SLOM-S05",
+    "name": "Chekkalu",
+    "slug": "chekkalu",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Traditional Andhra rasam podi with perfect balance of spices and pepper.",
-    "description": "Rassam Podi is a freshly stone-ground spice blend of black pepper, cumin, coriander, and red chillies. Makes a warming, digestive rasam with authentic Andhra flavour.",
-    "highlights": ["Black pepper forward", "Stone-ground", "Digestive rasam", "Homemade recipe"]
+    "shortDescription": "Classic rice crackers (Chekkalu) made with sesame seeds and pure oil.",
+    "description": "Chekkalu are traditional rice flour crackers with sesame seeds and spices. Crispy, light, and freshly made in pure groundnut oil. A timeless Andhra snack for all occasions.",
+    "highlights": [
+      "Sesame seed garnish",
+      "Pure groundnut oil",
+      "Crispy and light",
+      "Traditional Andhra snack"
+    ]
   },
   {
-    "id": "SLOM-014",
-    "name": "Nuvvula Podi",
-    "slug": "nuvvula-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/nuvvula_podi.webp",
+    "id": "SLOM-S06",
+    "name": "Karam Poosa",
+    "slug": "karam-poosa",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Sesame seed podi with rich nutty flavour — calcium-rich and tasty.",
-    "description": "Nuvvula Podi is made from roasted sesame seeds ground with spices. Rich in calcium and healthy fats. Perfect with hot rice and ghee, or as a topping on dosa and idly.",
-    "highlights": ["Roasted sesame seeds", "Calcium-rich", "Rich nutty flavour", "Homemade recipe"]
+    "shortDescription": "Spicy and crispy Karam Poosa — a beloved Andhra tea-time snack.",
+    "description": "Karam Poosa is a spicy gram flour-based snack made with fresh green chillies, curry leaves, and spices. Fried in pure oil for an authentic, addictive crunch.",
+    "highlights": [
+      "Gram flour base",
+      "Spicy and crispy",
+      "Fried in pure oil",
+      "Classic Andhra recipe"
+    ]
   },
   {
-    "id": "SLOM-015",
-    "name": "Veerusenaga Podi",
-    "slug": "veerusenaga-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/veerusenaga.webp",
+    "id": "SLOM-S07",
+    "name": "Sakinalu",
+    "slug": "sakinalu",
+    "category": "Snacks",
+    "subCategory": "Traditional Snacks",
+    "image": "",
     "featured": false,
-    "shortDescription": "Nutritious horsegram (Veerusenaga) powder — protein-packed traditional food.",
-    "description": "Veerusenaga Podi is made from roasted horsegram ground with traditional spices. Rich in protein and iron. A highly nutritious traditional Andhra powder best mixed with rice and ghee.",
-    "highlights": ["Roasted horsegram", "Protein and iron rich", "Traditional recipe", "Homemade recipe"]
+    "shortDescription": "Traditional Sakinalu — a festive Sankranti snack made with sesame and rice flour.",
+    "description": "Sakinalu are handmade festive snacks made with rice flour and sesame seeds. A traditional Sankranti special from Andhra Pradesh, fried in pure oil to golden perfection.",
+    "highlights": [
+      "Sesame and rice flour",
+      "Handmade traditional",
+      "Sankranti special",
+      "Fried in pure oil"
+    ]
   },
   {
-    "id": "SLOM-016",
-    "name": "Idly Podi",
-    "slug": "idly-podi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/idly_podi.webp",
-    "featured": true,
-    "shortDescription": "Freshly ground Idly Podi with aromatic lentils and spices — best with ghee.",
-    "description": "Our Idly Podi is made fresh from roasted urad dal, chana dal, sesame seeds, and red chillies. Freshly stone-ground for maximum aroma. Best enjoyed mixed with sesame oil or ghee.",
-    "highlights": ["Freshly stone-ground", "No fillers", "Roasted lentil blend", "Homemade recipe"]
-  },
-  {
-    "id": "SLOM-017",
-    "name": "Idly Karam",
-    "slug": "idly-karam",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/iidly_karam.webp",
+    "id": "SLOM-C01",
+    "name": "Coconut Chutney",
+    "slug": "coconut-chutney",
+    "category": "Others",
+    "subCategory": "Chutneys",
+    "image": "",
     "featured": false,
-    "shortDescription": "Spicy and aromatic Idly Karam — ideal sprinkled over crispy hot dosa.",
-    "description": "Idly Karam is freshly made from roasted lentils, sesame, and red chillies ground to a coarse powder. Sprinkle over dosa with a drizzle of sesame oil for a complete Andhra breakfast.",
-    "highlights": ["Coarse traditional grind", "Roasted lentils", "No fillers", "Homemade recipe"]
+    "shortDescription": "Freshly made coconut chutney — smooth, aromatic, and traditionally prepared.",
+    "description": "Our Coconut Chutney is made fresh from grated coconut, roasted gram, and traditional tempering. No vinegar, no artificial flavours — just pure, authentic taste.",
+    "highlights": [
+      "Fresh grated coconut",
+      "Traditional tempering",
+      "No vinegar",
+      "Homemade recipe"
+    ]
   },
   {
-    "id": "SLOM-018",
-    "name": "Ulava Pindi",
-    "slug": "ulava-pindi",
-    "category": "Powders",
-    "subCategory": "Homemade Podi",
-    "image": "/images/products/ulava_pindi.webp",
+    "id": "SLOM-C02",
+    "name": "Ginger Chutney",
+    "slug": "ginger-chutney",
+    "category": "Others",
+    "subCategory": "Chutneys",
+    "image": "",
     "featured": false,
-    "shortDescription": "Pure horsegram (Ulava) flour — nutritious and traditionally milled.",
-    "description": "Ulava Pindi is freshly milled horsegram flour packed with protein, iron, and fibre. Used in traditional Andhra recipes like ulava charu and as a health supplement.",
-    "highlights": ["Freshly milled", "High protein and iron", "Traditional use", "Homemade recipe"]
+    "shortDescription": "Tangy Ginger (Allam) Chutney made with fresh ginger and traditional spices.",
+    "description": "Allam Chutney is made from fresh ginger, tamarind, and jaggery in perfect balance. Pairs beautifully with idly, dosa, and pesarattu. A digestive-friendly chutney loved across Telugu households.",
+    "highlights": [
+      "Fresh ginger base",
+      "Natural tamarind",
+      "Digestive benefits",
+      "Homemade recipe"
+    ]
   },
   {
-    "id": "SLOM-019",
+    "id": "SLOM-C03",
+    "name": "Coriander Chutney",
+    "slug": "coriander-chutney",
+    "category": "Others",
+    "subCategory": "Chutneys",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Fresh coriander chutney bursting with natural flavour and green goodness.",
+    "description": "Fresh coriander leaves blended with green chillies, lemon, and spices to create this vibrant chutney. No artificial colour — the natural green colour comes from fresh coriander.",
+    "highlights": [
+      "Fresh coriander leaves",
+      "Natural green colour",
+      "No artificial colour",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-C04",
+    "name": "Tomato Chutney",
+    "slug": "tomato-chutney",
+    "category": "Others",
+    "subCategory": "Chutneys",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Tangy and spicy homemade tomato chutney — perfect with idly and dosa.",
+    "description": "Made from fresh ripe tomatoes, onions, and traditional spices. This tangy chutney is a household favourite across South India. No artificial colour, no vinegar.",
+    "highlights": [
+      "Fresh ripe tomatoes",
+      "Traditional spice blend",
+      "No vinegar added",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-C05",
+    "name": "Onion Gongura Chutney",
+    "slug": "onion-gongura-chutney",
+    "category": "Others",
+    "subCategory": "Chutneys",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Classic Andhra-style Onion Gongura Chutney with authentic tangy flavour.",
+    "description": "Gongura (sorrel leaves) combined with fresh onions and traditional spices create this iconic Andhra chutney. Tangy, spicy, and packed with iron and vitamins.",
+    "highlights": [
+      "Fresh Gongura leaves",
+      "Iron-rich sorrel",
+      "Andhra traditional recipe",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-C06",
+    "name": "Green Chilli Chutney",
+    "slug": "green-chilli-chutney",
+    "category": "Others",
+    "subCategory": "Chutneys",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Fiery green chilli chutney for those who love bold, spicy flavours.",
+    "description": "Fresh green chillies tempered with mustard seeds, curry leaves, and spices. Bold, hot, and flavourful — this chutney adds a punch to any meal. Naturally coloured from fresh chillies.",
+    "highlights": [
+      "Fresh green chillies",
+      "Natural colour only",
+      "Bold and spicy",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-P01",
     "name": "Avakaya",
     "slug": "avakaya",
     "category": "Pickles",
@@ -225,10 +332,15 @@
     "featured": true,
     "shortDescription": "Classic Andhra Avakaya — raw mango pickle made in pure sesame oil with bold spices.",
     "description": "Classic Avakaya — Andhra-style raw mango pickle made with freshly ground spices and pure sesame oil. No vinegar, no preservatives. Matures to perfection in traditional clay jars.",
-    "highlights": ["Pure sesame oil base", "No vinegar", "Stone-ground spices", "Traditional clay jar recipe"]
+    "highlights": [
+      "Pure sesame oil base",
+      "No vinegar",
+      "Stone-ground spices",
+      "Traditional clay jar recipe"
+    ]
   },
   {
-    "id": "SLOM-020",
+    "id": "SLOM-P02",
     "name": "Sweet Avakaya",
     "slug": "sweet-avakaya",
     "category": "Pickles",
@@ -237,10 +349,15 @@
     "featured": false,
     "shortDescription": "Sweet raw mango pickle — a milder, sweeter take on the classic Avakaya.",
     "description": "Sweet Avakaya is a popular variation of the classic Andhra mango pickle made with jaggery and mild spices. Less spicy, naturally sweet, and loved by all ages including children.",
-    "highlights": ["Natural jaggery sweetness", "Mild spice level", "No vinegar", "Traditional recipe"]
+    "highlights": [
+      "Natural jaggery sweetness",
+      "Mild spice level",
+      "No vinegar",
+      "Traditional recipe"
+    ]
   },
   {
-    "id": "SLOM-021",
+    "id": "SLOM-P03",
     "name": "Magaya",
     "slug": "magaya",
     "category": "Pickles",
@@ -249,82 +366,49 @@
     "featured": false,
     "shortDescription": "Magaya — raw mango pickle with fenugreek and traditional Andhra spices.",
     "description": "Magaya is a unique Andhra-style raw mango pickle made with tender mango pieces, fenugreek seeds, and bold spices. Distinct from avakaya with its own deep, rich flavour profile.",
-    "highlights": ["Tender raw mango", "Fenugreek seeds", "No vinegar", "Traditional recipe"]
+    "highlights": [
+      "Tender raw mango",
+      "Fenugreek seeds",
+      "No vinegar",
+      "Traditional recipe"
+    ]
   },
   {
-    "id": "SLOM-022",
-    "name": "Dabbakaya",
-    "slug": "dabbakaya",
+    "id": "SLOM-P04",
+    "name": "Dabbakaya Pickle",
+    "slug": "dabbakaya-pickle",
     "category": "Pickles",
     "subCategory": "Traditional Pickles",
     "image": "/images/products/dabbakkaya.webp",
     "featured": false,
     "shortDescription": "Dabbakaya pickle — made from a special round mango variety with bold Andhra spices.",
     "description": "Dabbakaya is a traditional Andhra pickle made from a unique round mango variety known for its firm texture and distinct sourness. Made with pure sesame oil and freshly ground spices.",
-    "highlights": ["Unique mango variety", "Pure sesame oil", "No vinegar", "Traditional recipe"]
+    "highlights": [
+      "Unique mango variety",
+      "Pure sesame oil",
+      "No vinegar",
+      "Traditional recipe"
+    ]
   },
   {
-    "id": "SLOM-023",
-    "name": "Kakarakaya Pickle",
-    "slug": "kakarakaya-pickle",
+    "id": "SLOM-P05",
+    "name": "Tomato Pickle",
+    "slug": "tomato-pickle",
     "category": "Pickles",
     "subCategory": "Traditional Pickles",
-    "image": "/images/products/kakarayayya.webp",
+    "image": "",
     "featured": false,
-    "shortDescription": "Bitter gourd (Kakarakaya) pickle — tangy, spicy, and traditionally made.",
-    "description": "Kakarakaya Pickle is made from fresh bitter gourd cooked with traditional Andhra spices and pure sesame oil. A bold, tangy pickle that pairs perfectly with hot rice and ghee.",
-    "highlights": ["Fresh bitter gourd", "Pure sesame oil", "No vinegar", "Traditional recipe"]
+    "shortDescription": "Tangy homemade tomato pickle with fresh tomatoes and traditional spices.",
+    "description": "Made from fresh ripe tomatoes, sesame oil, and bold Andhra spices. This tangy pickle is a household favourite that pairs perfectly with hot rice, idly, and dosa.",
+    "highlights": [
+      "Fresh ripe tomatoes",
+      "Pure sesame oil",
+      "No vinegar",
+      "Traditional recipe"
+    ]
   },
   {
-    "id": "SLOM-024",
-    "name": "Allam Pickle",
-    "slug": "allam-pickle",
-    "category": "Pickles",
-    "subCategory": "Traditional Pickles",
-    "image": "/images/products/allam.webp",
-    "featured": false,
-    "shortDescription": "Traditional ginger (Allam) pickle — tangy, warming, and digestive.",
-    "description": "Allam Pickle is made from fresh ginger pieces pickled in tamarind, mustard, and traditional spices. Warming, digestive, and full of bold flavour. A classic Andhra condiment.",
-    "highlights": ["Fresh ginger", "Natural tamarind", "Digestive benefits", "Traditional recipe"]
-  },
-  {
-    "id": "SLOM-025",
-    "name": "Nimmakaya Pickle",
-    "slug": "nimmakaya-pickle",
-    "category": "Pickles",
-    "subCategory": "Traditional Pickles",
-    "image": "/images/products/nimma_kayya.webp",
-    "featured": false,
-    "shortDescription": "Classic lemon (Nimmakaya) pickle — tangy and spicy with traditional spices.",
-    "description": "Nimmakaya Pickle is made from fresh whole lemons pickled with salt, chilli, and traditional spices. Tangy, bright, and flavourful — a pantry staple in every Andhra household.",
-    "highlights": ["Fresh whole lemons", "Traditional spice blend", "No vinegar", "Traditional recipe"]
-  },
-  {
-    "id": "SLOM-026",
-    "name": "Gongura Pickle",
-    "slug": "gongura-pickle",
-    "category": "Pickles",
-    "subCategory": "Traditional Pickles",
-    "image": "/images/products/gongura.webp",
-    "featured": true,
-    "shortDescription": "Authentic Andhra Gongura pickle — tangy, spicy, and full of iron.",
-    "description": "Gongura Pickle is made from fresh sorrel (Gongura) leaves cooked with sesame oil, red chillies, and traditional Andhra spices. Tangy, spicy, and packed with iron and vitamins.",
-    "highlights": ["Fresh Gongura sorrel leaves", "Iron-rich", "Andhra traditional recipe", "Pure sesame oil"]
-  },
-  {
-    "id": "SLOM-027",
-    "name": "Chintakaya Pickle",
-    "slug": "chintakaya-pickle",
-    "category": "Pickles",
-    "subCategory": "Traditional Pickles",
-    "image": "/images/products/chinttakayya.webp",
-    "featured": false,
-    "shortDescription": "Tamarind (Chintakaya) pickle — a unique tangy Andhra delicacy.",
-    "description": "Chintakaya Pickle is made from tender raw tamarind with traditional Andhra spices. A rare, season-specific pickle with a distinctive deep tangy flavour unlike any other.",
-    "highlights": ["Tender raw tamarind", "Season-specific", "No vinegar", "Traditional recipe"]
-  },
-  {
-    "id": "SLOM-028",
+    "id": "SLOM-P06",
     "name": "Pandu Mirapakaya Pickle",
     "slug": "pandu-mirapakaya-pickle",
     "category": "Pickles",
@@ -333,6 +417,657 @@
     "featured": false,
     "shortDescription": "Red chilli (Pandu Mirapakaya) pickle — bold, fiery, and traditionally made.",
     "description": "Pandu Mirapakaya Pickle is made from fresh red chillies pickled in pure sesame oil with mustard and traditional spices. Fiery, bold, and deeply flavourful — for those who love heat.",
-    "highlights": ["Fresh red chillies", "Pure sesame oil", "No vinegar", "Traditional recipe"]
+    "highlights": [
+      "Fresh red chillies",
+      "Pure sesame oil",
+      "No vinegar",
+      "Traditional recipe"
+    ]
+  },
+  {
+    "id": "SLOM-P07",
+    "name": "Usirikaya Pickle",
+    "slug": "usirikaya-pickle",
+    "category": "Pickles",
+    "subCategory": "Traditional Pickles",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Gooseberry (Usirikaya) pickle — tangy, vitamin C-rich, and traditionally made.",
+    "description": "Usirikaya Pickle is made from fresh Indian gooseberries (amla) pickled with mustard, sesame oil, and traditional Andhra spices. Rich in Vitamin C and known for its health benefits.",
+    "highlights": [
+      "Fresh Indian gooseberry",
+      "Vitamin C-rich",
+      "Pure sesame oil",
+      "Traditional recipe"
+    ]
+  },
+  {
+    "id": "SLOM-P08",
+    "name": "Chintakaya Pickle",
+    "slug": "chintakaya-pickle",
+    "category": "Pickles",
+    "subCategory": "Traditional Pickles",
+    "image": "/images/products/chinttakayya.webp",
+    "featured": false,
+    "shortDescription": "Tamarind (Chintakaya) pickle — a unique tangy Andhra delicacy.",
+    "description": "Chintakaya Pickle is made from tender raw tamarind with traditional Andhra spices. A rare, season-specific pickle with a distinctive deep tangy flavour unlike any other.",
+    "highlights": [
+      "Tender raw tamarind",
+      "Season-specific",
+      "No vinegar",
+      "Traditional recipe"
+    ]
+  },
+  {
+    "id": "SLOM-P09",
+    "name": "Gongura Pickle",
+    "slug": "gongura-pickle",
+    "category": "Pickles",
+    "subCategory": "Traditional Pickles",
+    "image": "/images/products/gongura.webp",
+    "featured": true,
+    "shortDescription": "Authentic Andhra Gongura pickle — tangy, spicy, and full of iron.",
+    "description": "Gongura Pickle is made from fresh sorrel (Gongura) leaves cooked with sesame oil, red chillies, and traditional Andhra spices. Tangy, spicy, and packed with iron and vitamins.",
+    "highlights": [
+      "Fresh Gongura sorrel leaves",
+      "Iron-rich",
+      "Andhra traditional recipe",
+      "Pure sesame oil"
+    ]
+  },
+  {
+    "id": "SLOM-P10",
+    "name": "Allam Pickle",
+    "slug": "allam-pickle",
+    "category": "Pickles",
+    "subCategory": "Traditional Pickles",
+    "image": "/images/products/allam.webp",
+    "featured": false,
+    "shortDescription": "Traditional ginger (Allam) pickle — tangy, warming, and digestive.",
+    "description": "Allam Pickle is made from fresh ginger pieces pickled in tamarind, mustard, and traditional spices. Warming, digestive, and full of bold flavour. A classic Andhra condiment.",
+    "highlights": [
+      "Fresh ginger",
+      "Natural tamarind",
+      "Digestive benefits",
+      "Traditional recipe"
+    ]
+  },
+  {
+    "id": "SLOM-P11",
+    "name": "Nimmakaya Pickle",
+    "slug": "nimmakaya-pickle",
+    "category": "Pickles",
+    "subCategory": "Traditional Pickles",
+    "image": "/images/products/nimma_kayya.webp",
+    "featured": false,
+    "shortDescription": "Classic lemon (Nimmakaya) pickle — tangy and spicy with traditional spices.",
+    "description": "Nimmakaya Pickle is made from fresh whole lemons pickled with salt, chilli, and traditional spices. Tangy, bright, and flavourful — a pantry staple in every Andhra household.",
+    "highlights": [
+      "Fresh whole lemons",
+      "Traditional spice blend",
+      "No vinegar",
+      "Traditional recipe"
+    ]
+  },
+  {
+    "id": "SLOM-P12",
+    "name": "Kakarakaya Pickle",
+    "slug": "kakarakaya-pickle",
+    "category": "Pickles",
+    "subCategory": "Traditional Pickles",
+    "image": "/images/products/kakarayayya.webp",
+    "featured": false,
+    "shortDescription": "Bitter gourd (Kakarakaya) pickle — tangy, spicy, and traditionally made.",
+    "description": "Kakarakaya Pickle is made from fresh bitter gourd cooked with traditional Andhra spices and pure sesame oil. A bold, tangy pickle that pairs perfectly with hot rice and ghee.",
+    "highlights": [
+      "Fresh bitter gourd",
+      "Pure sesame oil",
+      "No vinegar",
+      "Traditional recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W01",
+    "name": "Idly Podi",
+    "slug": "idly-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/idly_podi.webp",
+    "featured": true,
+    "shortDescription": "Freshly ground Idly Podi with aromatic lentils and spices — best with ghee.",
+    "description": "Our Idly Podi is made fresh from roasted urad dal, chana dal, sesame seeds, and red chillies. Freshly stone-ground for maximum aroma. Best enjoyed mixed with sesame oil or ghee.",
+    "highlights": [
+      "Freshly stone-ground",
+      "No fillers",
+      "Roasted lentil blend",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W02",
+    "name": "Dosa Podi",
+    "slug": "dosa-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Spicy and aromatic Dosa Podi — ideal sprinkled over a crispy hot dosa.",
+    "description": "Dosa Podi is freshly made from roasted lentils, sesame, and red chillies ground to a coarse powder. Sprinkle over dosa with a drizzle of sesame oil for a complete Andhra breakfast.",
+    "highlights": [
+      "Coarse traditional grind",
+      "Roasted lentils",
+      "No fillers",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W03",
+    "name": "Idly Karam",
+    "slug": "idly-karam",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/iidly_karam.webp",
+    "featured": false,
+    "shortDescription": "Spicy and aromatic Idly Karam — a bold chilli-lentil blend for idly and dosa.",
+    "description": "Idly Karam is freshly made from roasted lentils, sesame, and red chillies ground to a coarse powder. Mix with sesame oil or ghee and serve alongside idly for an authentic Andhra breakfast.",
+    "highlights": [
+      "Coarse traditional grind",
+      "Roasted lentils",
+      "No fillers",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W04",
+    "name": "Karam Podi",
+    "slug": "karam-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/karam_podi.webp",
+    "featured": true,
+    "shortDescription": "Spicy and aromatic Karam Podi — a bold Andhra-style chilli powder blend.",
+    "description": "Karam Podi is a fiery red chilli powder blend made with fresh dried chillies, roasted lentils, and traditional spices. Stone-ground fresh for bold heat and deep flavour. Best mixed with hot rice and sesame oil.",
+    "highlights": [
+      "Fresh red chillies",
+      "Stone-ground",
+      "No fillers",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W05",
+    "name": "Dhanyalu Podi",
+    "slug": "dhanyalu-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/dhanyalu_podi.webp",
+    "featured": false,
+    "shortDescription": "Freshly ground coriander seed podi with warm earthy flavour.",
+    "description": "Dhanyalu Podi is made from freshly roasted and stone-ground coriander seeds. Adds depth and warmth to chutneys, gravies, and rice dishes. Pure spice with no fillers.",
+    "highlights": [
+      "Freshly roasted coriander",
+      "Stone-ground",
+      "Pure spice — no fillers",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W06",
+    "name": "Kothimeera Podi",
+    "slug": "kothimeera-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Aromatic dry coriander leaf powder — a versatile everyday kitchen spice.",
+    "description": "Kothimeera Podi is made from dried fresh coriander leaves blended with traditional spices. Adds a fresh herbaceous note to dal, rice, and gravies. Stone-ground for authentic texture.",
+    "highlights": [
+      "Dried coriander leaves",
+      "Stone-ground",
+      "No artificial colour",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W07",
+    "name": "Kottimera Karam",
+    "slug": "kottimera-karam",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/kottimera_karram.webp",
+    "featured": false,
+    "shortDescription": "Aromatic coriander (Kottimera) spice blend — fresh and flavourful.",
+    "description": "Kottimera Karam is a traditional Andhra spice blend made with dried coriander leaves, red chillies, and spices. Adds bold flavour to rice, dosa, and snacks. Stone-ground fresh.",
+    "highlights": [
+      "Dried coriander leaves",
+      "Traditional spice blend",
+      "Stone-ground",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W08",
+    "name": "Munagaku Podi",
+    "slug": "munagaku-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Nutritious drumstick leaf (Moringa) powder — a natural health supplement.",
+    "description": "Munagaku Podi is made from dried moringa leaves rich in iron, calcium, and vitamins. A traditional Andhra health food that can be mixed with rice or used as a seasoning.",
+    "highlights": [
+      "Moringa drumstick leaves",
+      "Iron and calcium rich",
+      "Traditional health food",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W09",
+    "name": "Karakkaya Podi",
+    "slug": "karakkaya-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Traditional Karakkaya (Chebulic Myrobalan) podi — digestive and medicinal.",
+    "description": "Karakkaya Podi is made from sun-dried Chebulic Myrobalan (Haritaki) — an Ayurvedic ingredient known for digestive benefits. Stone-ground fresh for maximum potency.",
+    "highlights": [
+      "Ayurvedic ingredient",
+      "Digestive benefits",
+      "Stone-ground fresh",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W10",
+    "name": "Pesara Podi",
+    "slug": "pesara-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/pesara_podi.webp",
+    "featured": false,
+    "shortDescription": "Freshly ground green gram (Pesara) podi — protein-rich and delicious.",
+    "description": "Pesara Podi is made from roasted green gram (moong dal) with traditional spices. Rich in protein and easy to digest. Mix with hot rice and ghee for a simple nutritious meal.",
+    "highlights": [
+      "Roasted green gram",
+      "Protein-rich",
+      "Easy to digest",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W11",
+    "name": "Nuvvula Podi",
+    "slug": "nuvvula-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/nuvvula_podi.webp",
+    "featured": false,
+    "shortDescription": "Sesame seed podi with rich nutty flavour — calcium-rich and tasty.",
+    "description": "Nuvvula Podi is made from roasted sesame seeds ground with spices. Rich in calcium and healthy fats. Perfect with hot rice and ghee, or as a topping on dosa and idly.",
+    "highlights": [
+      "Roasted sesame seeds",
+      "Calcium-rich",
+      "Rich nutty flavour",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W12",
+    "name": "Shonti Podi",
+    "slug": "shonti-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/shonti_podi.webp",
+    "featured": false,
+    "shortDescription": "Warming dry ginger (Shonti) powder — used in cooking and as a natural remedy.",
+    "description": "Shonti Podi is made from sun-dried ginger root ground to a fine powder. Used in Andhra cooking for warmth and flavour, and traditionally consumed for digestion and immunity.",
+    "highlights": [
+      "Sun-dried ginger root",
+      "Warming properties",
+      "Digestive aid",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W13",
+    "name": "Miriyalu Podi",
+    "slug": "miriyalu-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/miriyalu_podi.webp",
+    "featured": false,
+    "shortDescription": "Freshly ground black pepper powder with sharp, bold flavour.",
+    "description": "Miriyalu Podi is freshly stone-ground black pepper powder with bold, sharp flavour. Used in Andhra rasam, curries, and as a table spice. Pure pepper with no fillers or additives.",
+    "highlights": [
+      "Freshly stone-ground",
+      "Pure black pepper",
+      "No fillers",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W14",
+    "name": "Sambar Podi",
+    "slug": "sambar-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/sambar_podi.webp",
+    "featured": true,
+    "shortDescription": "Aromatic homemade sambar podi ground fresh with traditional spice blends.",
+    "description": "Our Sambar Podi is made from a traditional blend of coriander, cumin, red chillies, and other aromatic spices. Freshly roasted and stone-ground for deep, complex flavour in every pot.",
+    "highlights": [
+      "Traditional spice blend",
+      "Freshly roasted",
+      "Stone-ground",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W15",
+    "name": "Rassam Podi",
+    "slug": "rassam-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/rassam_podi.webp",
+    "featured": false,
+    "shortDescription": "Traditional Andhra rasam podi with perfect balance of spices and pepper.",
+    "description": "Rassam Podi is a freshly stone-ground spice blend of black pepper, cumin, coriander, and red chillies. Makes a warming, digestive rasam with authentic Andhra flavour.",
+    "highlights": [
+      "Black pepper forward",
+      "Stone-ground",
+      "Digestive rasam",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W16",
+    "name": "Velluli Podi",
+    "slug": "velluli-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/velluli_podi.webp",
+    "featured": false,
+    "shortDescription": "Pure garlic (Velluli) powder with bold flavour — no fillers, just pure garlic.",
+    "description": "Made from sun-dried garlic cloves ground to a fine powder. Intense garlic flavour for use in masalas, marinades, and everyday cooking. Pure and unadulterated.",
+    "highlights": [
+      "Sun-dried garlic cloves",
+      "Pure — no fillers",
+      "Intense flavour",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W17",
+    "name": "Masala Powder",
+    "slug": "masala-powder",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Freshly blended traditional masala powder for curries and gravies.",
+    "description": "Our Masala Powder is a blend of whole spices freshly roasted and ground. Each batch is prepared traditionally to ensure consistent depth of flavour in your everyday curries.",
+    "highlights": [
+      "Whole spice blend",
+      "Freshly roasted and ground",
+      "No fillers or colours",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W18",
+    "name": "Jellakarra Podi",
+    "slug": "jellakarra-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/jellakarra_podi.webp",
+    "featured": false,
+    "shortDescription": "Freshly ground cumin (Jeelakarra) powder with bold earthy aroma.",
+    "description": "Jellakarra Podi is made from freshly roasted and ground cumin seeds. Rich in digestive properties and deep earthy flavour. Used in dals, rasam, rice, and traditional Andhra recipes.",
+    "highlights": [
+      "Freshly roasted cumin",
+      "Stone-ground",
+      "Digestive properties",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W19",
+    "name": "Kobbari Podi",
+    "slug": "kobbari-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/kobbari_podi.webp",
+    "featured": false,
+    "shortDescription": "Freshly made coconut (Kobbari) podi — nutty and aromatic.",
+    "description": "Kobbari Podi is made from freshly dried and ground coconut with traditional spices. Rich, nutty flavour that pairs beautifully with idly, dosa, and hot rice. Made fresh in small batches.",
+    "highlights": [
+      "Fresh dried coconut",
+      "Stone-ground",
+      "Rich nutty flavour",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W20",
+    "name": "Pudina Podi",
+    "slug": "pudina-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/pudina_podi.webp",
+    "featured": false,
+    "shortDescription": "Aromatic dried mint (Pudina) powder — refreshing and flavourful.",
+    "description": "Pudina Podi is made from dried fresh mint leaves blended with spices. Adds a cool, refreshing flavour to rice, chutneys, and snacks. A traditional digestive-friendly spice powder.",
+    "highlights": [
+      "Dried fresh mint leaves",
+      "Stone-ground",
+      "Digestive benefits",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W21",
+    "name": "Kakarakayya Podi",
+    "slug": "kakarakayya-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/kakarakayya.webp",
+    "featured": false,
+    "shortDescription": "Bitter gourd (Kakarakayya) powder — a traditional health remedy.",
+    "description": "Kakarakayya Podi is made from dried and powdered bitter gourd. A traditional Andhra health food known for its blood sugar balancing and digestive properties. Stone-ground fresh.",
+    "highlights": [
+      "Dried bitter gourd",
+      "Blood sugar benefits",
+      "Digestive aid",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-W22",
+    "name": "Veerusenaga Podi",
+    "slug": "veerusenaga-podi",
+    "category": "Powders",
+    "subCategory": "Homemade Podi",
+    "image": "/images/products/veerusenaga.webp",
+    "featured": false,
+    "shortDescription": "Nutritious horsegram (Veerusenaga) powder — protein-packed traditional food.",
+    "description": "Veerusenaga Podi is made from roasted horsegram ground with traditional spices. Rich in protein and iron. A highly nutritious traditional Andhra powder best mixed with rice and ghee.",
+    "highlights": [
+      "Roasted horsegram",
+      "Protein and iron rich",
+      "Traditional recipe",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-N01",
+    "name": "Turmeric Powder",
+    "slug": "turmeric-powder",
+    "category": "Others",
+    "subCategory": "Natural & Traditional",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Pure natural turmeric powder — bright, aromatic, and traditionally ground.",
+    "description": "Our Turmeric Powder is made from sun-dried whole turmeric roots ground fresh. Bright golden colour, strong aroma, and natural medicinal properties make it a kitchen and wellness essential.",
+    "highlights": [
+      "Sun-dried turmeric roots",
+      "Freshly ground",
+      "Natural colour",
+      "No added colour"
+    ]
+  },
+  {
+    "id": "SLOM-N02",
+    "name": "Kumkum",
+    "slug": "kumkum",
+    "category": "Others",
+    "subCategory": "Natural & Traditional",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Traditional natural Kumkum — pure and traditionally prepared.",
+    "description": "Traditional Kumkum prepared naturally without chemical dyes. Used in daily worship and rituals. Prepared the traditional way to preserve its purity and significance.",
+    "highlights": [
+      "Naturally prepared",
+      "No chemical dyes",
+      "Traditional process",
+      "Pure quality"
+    ]
+  },
+  {
+    "id": "SLOM-N03",
+    "name": "Fenugreek Powder",
+    "slug": "fenugreek-powder",
+    "category": "Others",
+    "subCategory": "Natural & Traditional",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Freshly ground fenugreek (Methi) powder — bitter, warming, and medicinal.",
+    "description": "Fenugreek Powder is made from roasted fenugreek seeds ground to a fine powder. Used in Andhra cooking as a spice and known for its blood sugar-regulating and digestive properties.",
+    "highlights": [
+      "Roasted fenugreek seeds",
+      "Medicinal properties",
+      "Stone-ground",
+      "No fillers"
+    ]
+  },
+  {
+    "id": "SLOM-N04",
+    "name": "Coriander Powder",
+    "slug": "coriander-powder",
+    "category": "Others",
+    "subCategory": "Natural & Traditional",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Pure coriander powder — freshly ground with warm, earthy flavour.",
+    "description": "Our Coriander Powder is made from freshly roasted whole coriander seeds stone-ground to a fine powder. Rich aroma and natural flavour for everyday cooking and spice blends.",
+    "highlights": [
+      "Whole coriander seeds",
+      "Freshly roasted",
+      "Stone-ground",
+      "No fillers"
+    ]
+  },
+  {
+    "id": "SLOM-F01",
+    "name": "Ulava Pindi",
+    "slug": "ulava-pindi",
+    "category": "Others",
+    "subCategory": "Flour & Mixes",
+    "image": "/images/products/ulava_pindi.webp",
+    "featured": false,
+    "shortDescription": "Pure horsegram (Ulava) flour — nutritious and traditionally milled.",
+    "description": "Ulava Pindi is freshly milled horsegram flour packed with protein, iron, and fibre. Used in traditional Andhra recipes like ulava charu and as a health supplement.",
+    "highlights": [
+      "Freshly milled",
+      "High protein and iron",
+      "Traditional use",
+      "Homemade recipe"
+    ]
+  },
+  {
+    "id": "SLOM-F02",
+    "name": "Minapappu Podi",
+    "slug": "minapappu-podi",
+    "category": "Others",
+    "subCategory": "Flour & Mixes",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Freshly ground urad dal (Minapappu) flour — a versatile cooking essential.",
+    "description": "Minapappu Podi is freshly milled urad dal flour. Used in traditional South Indian cooking for making idly, dosa batter, vadas, and more. Pure and freshly ground without additives.",
+    "highlights": [
+      "Freshly milled urad dal",
+      "No additives",
+      "Versatile use",
+      "Traditional milling"
+    ]
+  },
+  {
+    "id": "SLOM-F03",
+    "name": "Ravva Dosa Mix",
+    "slug": "ravva-dosa-mix",
+    "category": "Others",
+    "subCategory": "Flour & Mixes",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Ready-to-use Ravva Dosa mix — crispy, instant, and traditionally flavoured.",
+    "description": "Our Ravva Dosa Mix is a pre-blended flour mix for making crispy semolina dosas instantly. No fermentation required — just add water and cook for a quick, authentic Andhra breakfast.",
+    "highlights": [
+      "No fermentation needed",
+      "Pre-blended spices",
+      "Quick and easy",
+      "Authentic taste"
+    ]
+  },
+  {
+    "id": "SLOM-F04",
+    "name": "Sanaga Pindi",
+    "slug": "sanaga-pindi",
+    "category": "Others",
+    "subCategory": "Flour & Mixes",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Pure chickpea (Sanaga) flour — freshly ground and ideal for many recipes.",
+    "description": "Sanaga Pindi is freshly milled chickpea (chana dal) flour. Used in Andhra cooking for making pakoras, snacks, gravies, and batters. High in protein and freshly ground without additives.",
+    "highlights": [
+      "Freshly milled",
+      "High protein",
+      "Versatile cooking flour",
+      "No additives"
+    ]
+  },
+  {
+    "id": "SLOM-F05",
+    "name": "Barley Powder",
+    "slug": "barley-powder",
+    "category": "Others",
+    "subCategory": "Flour & Mixes",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Nutritious barley powder — a traditional health supplement.",
+    "description": "Barley Powder is made from freshly roasted and ground barley grain. Rich in fibre, vitamins, and minerals. Consumed as a health drink or used in cooking for its cooling and nutritious properties.",
+    "highlights": [
+      "Freshly roasted barley",
+      "Rich in fibre",
+      "Cooling properties",
+      "Traditional health food"
+    ]
+  },
+  {
+    "id": "SLOM-F06",
+    "name": "Pesara Pappu Mix",
+    "slug": "pesara-pappu-mix",
+    "category": "Others",
+    "subCategory": "Flour & Mixes",
+    "image": "",
+    "featured": false,
+    "shortDescription": "Ready-to-cook green gram (Pesara Pappu) mix — healthy, quick, and nutritious.",
+    "description": "Pesara Pappu Mix is a pre-prepared moong dal blend ready for cooking. Rich in protein and easy to digest. Perfect for quick, healthy dals and traditional Andhra pesarattu batter.",
+    "highlights": [
+      "Pre-prepared mix",
+      "High protein moong dal",
+      "Easy to cook",
+      "Nutritious and digestive"
+    ]
   }
 ]

@@ -27,9 +27,11 @@
   flex-shrink: 0;
 }
 
-.logo-icon {
-  font-size: 2rem;
-  line-height: 1;
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .logo-text {

@@ -55,7 +55,7 @@ export default function Header() {
       <div className="header-top">
         <div className="container header-inner">
           <Link to="/" className="logo" onClick={closeMenu}>
-            <div className="logo-icon">🛢️</div>
+            <img src="/logo.png" alt="Sri Lakshmi Pindi Mara & Oil Mills" className="logo-img" />
             <div className="logo-text">
               <span className="logo-name">{BUSINESS.name}</span>
               <span className="logo-tagline">Pure · Traditional · Trusted</span>

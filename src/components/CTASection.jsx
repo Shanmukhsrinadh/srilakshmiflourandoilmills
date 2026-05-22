@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { getWhatsAppLink } from '../config/business'
+import { getWhatsAppLink, getCallLink, BUSINESS } from '../config/business'
 import './CTASection.css'
 
 export default function CTASection({ heading, subtext }) {
@@ -15,7 +14,7 @@ export default function CTASection({ heading, subtext }) {
             {subtext || 'Get in touch with us today for fresh, quality products. Quick WhatsApp response guaranteed.'}
           </p>
           <div className="cta-btns">
-            <a href="tel:REPLACE_PHONE_NUMBER" className="btn btn-call btn-lg">
+            <a href={getCallLink()} className="btn btn-call btn-lg">
               📞 Call Now
             </a>
             <a
@@ -26,9 +25,15 @@ export default function CTASection({ heading, subtext }) {
             >
               💬 WhatsApp Enquiry
             </a>
-            <Link to="/contact" className="btn btn-outline btn-lg" style={{ borderColor: 'rgba(255,255,255,0.5)', color: 'var(--white)' }}>
+            <a
+              href={BUSINESS.mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-outline btn-lg"
+              style={{ borderColor: 'rgba(255,255,255,0.5)', color: 'var(--white)' }}
+            >
               📍 Visit Store
-            </Link>
+            </a>
           </div>
         </div>
       </div>

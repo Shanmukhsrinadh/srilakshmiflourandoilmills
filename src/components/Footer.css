@@ -35,9 +35,11 @@
   margin-bottom: 14px;
 }
 
-.footer-logo-icon {
-  font-size: 1.9rem;
-  line-height: 1;
+.footer-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .footer-logo-name {

@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand col */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="footer-logo-icon" aria-hidden="true">🛢️</span>
+              <img src="/logo.png" alt="Sri Lakshmi Pindi Mara & Oil Mills logo" className="footer-logo-img" />
               <div>
                 <div className="footer-logo-name" itemProp="name">{BUSINESS.name}</div>
                 <div className="footer-logo-sub">Pure · Traditional · Trusted</div>

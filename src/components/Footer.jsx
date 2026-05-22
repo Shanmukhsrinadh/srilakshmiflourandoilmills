@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { BUSINESS, getWhatsAppLink, getCallLink } from '../config/business'
 import './Footer.css'
+import logo from '../assets/images/logo.png'
 
 const quickLinks = [
   { to: '/', label: 'Home' },
@@ -27,7 +28,11 @@ export default function Footer() {
           {/* Brand col */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo/logo.png" alt="Sri Lakshmi Pindi Mara & Oil Mills logo" className="footer-logo-img" />
+              <img
+                src={logo}
+                alt="Sri Lakshmi Pindi Mara & Oil Mills logo"
+                className="footer-logo-img"
+              />
               <div>
                 <div className="footer-logo-name" itemProp="name">{BUSINESS.name}</div>
                 <div className="footer-logo-sub">Pure · Traditional · Trusted</div>

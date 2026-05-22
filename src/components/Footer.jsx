@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="footer-brand">
             <div className="footer-logo">
               <img
-                src="/images/shop/logo.png"
+                src="/logo.png"
                 alt="Sri Lakshmi Pindi Mara & Oil Mills logo"
                 className="footer-logo-img"
               />

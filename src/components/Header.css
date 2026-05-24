@@ -34,6 +34,15 @@
   flex-shrink: 0;
 }
 
+.nav-travels-link {
+  color: var(--green-deep) !important;
+  font-weight: 700 !important;
+}
+
+.nav-travels-link.active {
+  color: var(--green-deep) !important;
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;

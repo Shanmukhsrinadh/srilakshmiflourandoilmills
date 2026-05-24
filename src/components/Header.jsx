@@ -35,6 +35,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const navigate = useNavigate()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -47,7 +48,9 @@ export default function Header() {
   const handleSearch = (e) => {
     e.preventDefault()
     if (searchQuery.trim()) {
-      window.location.href = `/products?search=${encodeURIComponent(searchQuery.trim())}`
+      navigate(`/products?search=${encodeURIComponent(searchQuery.trim())}`)
+      setSearchOpen(false)
+      setSearchQuery('')
     }
   }
 
@@ -70,6 +73,7 @@ export default function Header() {
           <nav className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
             <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
             <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
+            <NavLink to="/travels" onClick={closeMenu} className="nav-travels-link">🚌 Travels</NavLink>
             <AnchorNavLink hash="about" onClick={closeMenu}>About</AnchorNavLink>
             <AnchorNavLink hash="contact" onClick={closeMenu}>Contact</AnchorNavLink>
 

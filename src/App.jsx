@@ -9,6 +9,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
+import Travels from './pages/Travels'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -45,6 +46,8 @@ function App() {
               path="/products/:slug"
               element={<ProductDetails />}
             />
+
+            <Route path="/travels" element={<Travels />} />
 
             <Route
               path="/about"

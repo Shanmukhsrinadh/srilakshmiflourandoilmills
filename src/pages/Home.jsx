@@ -8,6 +8,7 @@ import CTASection from '../components/CTASection'
 import productsData from '../data/products.json'
 import { BUSINESS, getWhatsAppLink, getCallLink } from '../config/business'
 import './Home.css'
+import './TravelsBanner.css'
 
 const featuredProducts = productsData.filter(p => p.featured).slice(0, 10)
 
@@ -117,6 +118,28 @@ export default function Home() {
         <div className="container">
           <div className="featured-scroll-hint">
             ← Click arrows to explore products →
+          </div>
+        </div>
+      </section>
+
+      {/* ── Travels Banner ── */}
+      <section className="travels-banner-section">
+        <div className="travels-banner-img-col">
+          <img src="/images/bus_angle.png" alt="Sri Lakshmi Travels bus" className="travels-banner-bus-img" />
+        </div>
+        <div className="travels-banner-content">
+          <span className="travels-banner-badge">🚌 New Service</span>
+          <h2 className="travels-banner-title">Sri Lakshmi Travels</h2>
+          <p className="travels-banner-sub">We now offer premium AC bus hire for <strong>marriages, pilgrimages, tours</strong> and group travel across Andhra Pradesh. Comfortable seats, experienced drivers, best rates.</p>
+          <ul className="travels-banner-points">
+            <li>💍 Marriage & Wedding Trips</li>
+            <li>🏔️ Pilgrimage & Temple Tours</li>
+            <li>🏖️ Family & Group Leisure Trips</li>
+            <li>❄️ 2×2 Executive A/C Coach</li>
+          </ul>
+          <div className="travels-banner-btns">
+            <Link to="/travels" className="btn btn-primary">Explore Travels →</Link>
+            <a href={getWhatsAppLink("Hi Sri Lakshmi Travels, I'd like to book a bus. Please share details.")} target="_blank" rel="noreferrer" className="btn btn-whatsapp btn-sm">💬 Quick Enquiry</a>
           </div>
         </div>
       </section>

@@ -73,7 +73,7 @@ export default function Header() {
           <nav className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
             <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
             <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
-            <NavLink to="/travels" onClick={closeMenu} className="nav-travels-link">🚌 Travels</NavLink>
+            <NavLink to="/travels" onClick={closeMenu} className="nav-travels-link">Travels</NavLink>
             <AnchorNavLink hash="about" onClick={closeMenu}>About</AnchorNavLink>
             <AnchorNavLink hash="contact" onClick={closeMenu}>Contact</AnchorNavLink>
 

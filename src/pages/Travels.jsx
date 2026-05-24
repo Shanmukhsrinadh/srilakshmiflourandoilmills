@@ -2,10 +2,22 @@ import { BUSINESS, getWhatsAppLink, getCallLink } from '../config/business'
 import './Travels.css'
 
 const busImages = [
-  { src: '/images/bus_front.png', alt: 'Sri Lakshmi Travels bus — front view' },
-  { src: '/images/bus_side.png', alt: 'Sri Lakshmi Travels bus — side view, 2x2 A/C coach' },
-  { src: '/images/bus_angle.png', alt: 'Sri Lakshmi Travels bus — exterior angle' },
-  { src: '/images/bus_interior.jpeg', alt: 'Sri Lakshmi Travels bus — comfortable interior seating' },
+  {
+    src: `${import.meta.env.BASE_URL}images/bus_front.png`,
+    alt: 'Sri Lakshmi Travels bus — front view'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/bus_side.png`,
+    alt: 'Sri Lakshmi Travels bus — side view, 2x2 A/C coach'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/bus_angle.png`,
+    alt: 'Sri Lakshmi Travels bus — exterior angle'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/bus_interior.jpeg`,
+    alt: 'Sri Lakshmi Travels bus — comfortable interior seating'
+  },
 ]
 
 const services = [
@@ -35,7 +47,8 @@ export default function Travels() {
       {/* Hero */}
       <section className="travels-hero">
         <div className="travels-hero-bg">
-          <img src="/images/bus_side.png" alt="Sri Lakshmi Travels bus" className="travels-hero-img" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/bus_side.png`} alt="Sri Lakshmi Travels bus" className="travels-hero-img" />
           <div className="travels-hero-overlay" />
         </div>
         <div className="container travels-hero-content">
